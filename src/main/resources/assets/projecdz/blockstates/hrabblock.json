@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "projecdz:block/hrabblock"
+    },
+    "facing=east": {
+      "model": "projecdz:block/hrabblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "projecdz:block/hrabblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "projecdz:block/hrabblock",
+      "y": 270
+    }
+  }
+}

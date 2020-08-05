@@ -1,0 +1,30 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "projecdz:diamondblazed"
+    },
+    "3": {
+      "item": "projecdz:diamondblazed"
+    },
+    "4": {
+      "item": "minecraft:clock"
+    },
+    "5": {
+      "item": "projecdz:diamondblazed"
+    },
+    "7": {
+      "item": "projecdz:diamondblazed"
+    }
+  },
+  "result": {
+    "item": "projecdz:daynightswitcher",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "radioactive_texture",
+        "1": "iron_block",
+        "2": "redstone_block",
+        "3": "blue_stained_glass"
+      },
+      "name": "default"
+    }
+  }
+}

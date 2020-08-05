@@ -1,0 +1,24 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "1": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "2": {
+      "item": "projecdz:diamondblazed"
+    }
+  },
+  "result": {
+    "item": "projecdz:nutriniumsword",
+    "count": 1
+  }
+}

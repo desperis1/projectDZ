@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "projecdz:block/generator"
+    },
+    "facing=east": {
+      "model": "projecdz:block/generator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "projecdz:block/generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "projecdz:block/generator",
+      "y": 270
+    }
+  }
+}

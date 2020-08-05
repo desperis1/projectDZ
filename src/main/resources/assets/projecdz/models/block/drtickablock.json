@@ -1,0 +1,12 @@
+{
+  "parent": "projecdz:custom/drticka",
+  "textures": {
+    "all": "projecdz:blocks/barrel_side",
+    "particle": "projecdz:blocks/barrel_side",
+    "0": "projecdz:blocks/bedrock",
+    "1": "projecdz:blocks/cobblestone",
+    "2": "projecdz:blocks/gold_block",
+    "3": "projecdz:blocks/blast_furnace_top",
+    "4": "projecdz:blocks/barrel_side"
+  }
+}

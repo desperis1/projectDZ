@@ -1,0 +1,20 @@
+{
+  "bm_dovody": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "projecdz:bm_dovody",
+        "stream": true
+      }
+    ]
+  },
+  "radiation": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "projecdz:radiation",
+        "stream": false
+      }
+    ]
+  }
+}

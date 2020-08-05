@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/hardened_cbble",
+    "up": "projecdz:blocks/hardened_cbble",
+    "north": "projecdz:blocks/hardened_cbble",
+    "east": "projecdz:blocks/hardened_cbble",
+    "south": "projecdz:blocks/hardened_cbble",
+    "west": "projecdz:blocks/hardened_cbble",
+    "particle": "projecdz:blocks/hardened_cbble"
+  }
+}

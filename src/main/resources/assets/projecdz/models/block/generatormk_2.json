@@ -1,0 +1,14 @@
+{
+  "parent": "projecdz:custom/generatormk2",
+  "textures": {
+    "all": "projecdz:blocks/beacon",
+    "particle": "projecdz:blocks/beacon",
+    "0": "projecdz:blocks/green_stained_glass",
+    "1": "projecdz:blocks/iron_bars",
+    "3": "projecdz:blocks/beacon",
+    "4": "projecdz:blocks/glass",
+    "5": "projecdz:blocks/redstone_block",
+    "6": "projecdz:blocks/coal_block",
+    "missing": "projecdz:blocks/iron_block"
+  }
+}

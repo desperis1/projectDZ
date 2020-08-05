@@ -1,0 +1,26 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:coal1item"
+    },
+    "1": {
+      "item": "projecdz:coal1item"
+    },
+    "2": {
+      "item": "projecdz:coal1item"
+    },
+    "3": {
+      "item": "projecdz:coal1item"
+    }
+  },
+  "result": {
+    "item": "projecdz:coal2item",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/hrab_log_top",
+    "up": "projecdz:blocks/hrab_log_top",
+    "north": "projecdz:blocks/hrab_log",
+    "east": "projecdz:blocks/hrab_log",
+    "south": "projecdz:blocks/hrab_log",
+    "west": "projecdz:blocks/hrab_log",
+    "particle": "projecdz:blocks/hrab_log_top"
+  }
+}

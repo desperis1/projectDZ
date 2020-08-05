@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "tab",
+  "definition": {
+    "name": "Project D",
+    "icon": {
+      "value": "CUSTOM:Antimatter"
+    },
+    "showSearch": true
+  }
+}

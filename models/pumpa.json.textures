@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "gray_concrete_powder",
+        "1": "red_concrete",
+        "2": "glass",
+        "4": "green_stained_glass",
+        "5": "gray_concrete",
+        "6": "black_concrete",
+        "7": "iron_block",
+        "8": "light_gray_concrete"
+      },
+      "name": "default"
+    }
+  }
+}

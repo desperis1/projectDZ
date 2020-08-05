@@ -1,0 +1,30 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "1": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "2": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "4": {
+      "item": "projecdz:diamondblazed"
+    },
+    "7": {
+      "item": "projecdz:diamondblazed"
+    }
+  },
+  "result": {
+    "item": "projecdz:neutriniumpickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "projecdz:custom/irradiator",
+  "textures": {
+    "all": "projecdz:blocks/radioactive_texture",
+    "particle": "projecdz:blocks/radioactive_texture",
+    "0": "projecdz:blocks/radioactive_texture",
+    "1": "projecdz:blocks/iron_block",
+    "2": "projecdz:blocks/redstone_block",
+    "3": "projecdz:blocks/blue_stained_glass"
+  }
+}

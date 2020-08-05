@@ -1,0 +1,33 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "neutriniumpicaxe3",
+    "customModelName": "Normal",
+    "name": "Neutrinium Pickaxe(ccruto)",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ProjectD"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 25.0,
+    "attackSpeed": 2.0,
+    "enchantability": 15,
+    "damageVsEntity": 6.0,
+    "usageCount": 15858,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Neutriniumitem"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "NeutriniumpickaxeToolInHandTick"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "spruce_planks",
+        "2": "blue_concrete",
+        "3": "smooth_stone_slab_side"
+      },
+      "name": "default"
+    }
+  }
+}

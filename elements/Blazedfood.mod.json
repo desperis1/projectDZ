@@ -1,0 +1,22 @@
+{
+  "_fv": 10,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "blazedfood",
+    "customModelName": "Normal",
+    "name": "Blazed Food",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:ProjectD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 24,
+    "saturation": 40.0,
+    "eatingSpeed": 15,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

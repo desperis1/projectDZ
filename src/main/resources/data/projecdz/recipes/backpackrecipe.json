@@ -1,0 +1,39 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:wool"
+    },
+    "2": {
+      "tag": "minecraft:wool"
+    },
+    "3": {
+      "tag": "minecraft:wool"
+    },
+    "4": {
+      "item": "minecraft:chest"
+    },
+    "5": {
+      "tag": "minecraft:wool"
+    },
+    "6": {
+      "tag": "minecraft:wool"
+    },
+    "7": {
+      "tag": "minecraft:wool"
+    },
+    "8": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result": {
+    "item": "projecdz:backpack",
+    "count": 1
+  }
+}

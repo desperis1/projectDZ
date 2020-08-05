@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/ametrinore",
+    "up": "projecdz:blocks/ametrinore",
+    "north": "projecdz:blocks/ametrinore",
+    "east": "projecdz:blocks/ametrinore",
+    "south": "projecdz:blocks/ametrinore",
+    "west": "projecdz:blocks/ametrinore",
+    "particle": "projecdz:blocks/ametrinore"
+  }
+}

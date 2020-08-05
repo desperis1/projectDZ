@@ -1,0 +1,30 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:ametrin"
+    },
+    "1": {
+      "item": "projecdz:ametrin"
+    },
+    "2": {
+      "item": "projecdz:ametrin"
+    },
+    "4": {
+      "item": "minecraft:blaze_rod"
+    },
+    "7": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "projecdz:ametrinpicaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/blazeddiamond_block",
+    "up": "projecdz:blocks/blazeddiamond_block",
+    "north": "projecdz:blocks/blazeddiamond_block",
+    "east": "projecdz:blocks/blazeddiamond_block",
+    "south": "projecdz:blocks/blazeddiamond_block",
+    "west": "projecdz:blocks/blazeddiamond_block",
+    "particle": "projecdz:blocks/blazeddiamond_block"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/dia_log_topbottom",
+    "up": "projecdz:blocks/dia_log_topbottom",
+    "north": "projecdz:blocks/dia_log",
+    "east": "projecdz:blocks/dia_log",
+    "south": "projecdz:blocks/dia_log",
+    "west": "projecdz:blocks/dia_log",
+    "particle": "projecdz:blocks/dia_log_topbottom"
+  }
+}

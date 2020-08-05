@@ -1,0 +1,1371 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Hrabblock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Hrabplanks",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Hrablogplanks",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Hrabplankssticks",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal1item",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal1fuel",
+      "type": "fuel",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal1recipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal2item",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal2recipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal2fuel",
+      "type": "fuel",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DialogBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dialog",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal3item",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal3recipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coal3fuel",
+      "type": "fuel",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Diamondblazed",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Diamondblazedrecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Neutriniumitem",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Neutriniumrecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Neutriniumpickaxe",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Neutriniumpicaxerecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NutriniumArmor",
+      "type": "armor",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Hardenedcbbleblock",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Hardenedcbblerecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Appleleavesblock",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DiamondLeaves",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Diamondblazedblock",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Blazeddiamondblockrecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NutriniumArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NeutriniumarmorGUI",
+      "type": "gui",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NeutriniumarmorGUIkeybindOnKeyPressed",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NeutriniumarmorGUIkeybind",
+      "type": "keybind",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NANVbuttonpresset",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NASPEEDbutttonpresed",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NutriniumArmorBootsTickEvent",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BMdovodyhod",
+      "type": "musicdisc",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BMplatna",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Bmplatnaachievment",
+      "type": "achievement",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Achievmentprocedure",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyNACommandExecuted",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyNA",
+      "type": "command",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NAslowfall",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NutriniumArmorLeggingsTickEvent",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Generator",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NAINVbuttonpress",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NutriniumArmorBodyTickEvent",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Generatormk1GUI",
+      "type": "gui",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Generatormk1procedure",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NAhelm",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NAboots",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NAbody",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NAleggins",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Generatorrecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "NeutriniumpickaxeToolInHandTick",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NeutriniumswordItemInHandTick",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Neutriniumswordrecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FullenchantorbRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fullenchantorb",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DiamondblazedRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HardCbbletocobble",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DaynightswitcherRightClickedInAir",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Daynightswitcher",
+      "type": "item",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DNswitch",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Blazedfood",
+      "type": "food",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Bfood1",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Bfood2",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Nutriniumsword",
+      "type": "tool",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nutriniumsword"
+    },
+    {
+      "name": "Generatormk2",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generatormk_2"
+    },
+    {
+      "name": "Generatormk2GUI",
+      "type": "gui",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generatormk_2_gui"
+    },
+    {
+      "name": "Generatormk2UpdateTick",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generatormk_2_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ametrinore",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinore"
+    },
+    {
+      "name": "Ametrin",
+      "type": "item",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrin"
+    },
+    {
+      "name": "Ametrinsmelting",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinsmelting"
+    },
+    {
+      "name": "Generator2recipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generator_2recipe"
+    },
+    {
+      "name": "Ametrinpicaxe",
+      "type": "tool",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinpicaxe"
+    },
+    {
+      "name": "Ametrinaxe",
+      "type": "tool",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinaxe"
+    },
+    {
+      "name": "Ametrinshovel",
+      "type": "tool",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinshovel"
+    },
+    {
+      "name": "Ametrinsword",
+      "type": "tool",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinsword"
+    },
+    {
+      "name": "Ametrinpickaxerecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinpickaxerecipe"
+    },
+    {
+      "name": "Ametrinaxerecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinaxerecipe"
+    },
+    {
+      "name": "Ametrinshovelrecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinshovelrecipe"
+    },
+    {
+      "name": "Ametrinswordrecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinswordrecipe"
+    },
+    {
+      "name": "Backpack",
+      "type": "item",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpack"
+    },
+    {
+      "name": "Backpackgui",
+      "type": "gui",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpackgui"
+    },
+    {
+      "name": "Backpackrecipe",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "backpackrecipe"
+    },
+    {
+      "name": "Antimatter",
+      "type": "item",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "antimatter"
+    },
+    {
+      "name": "Antimatterchievment",
+      "type": "achievement",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "antimatterchievment"
+    },
+    {
+      "name": "AMcraftprocedure",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "a_mcraftprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drtickablock",
+      "type": "block",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drtickablock"
+    },
+    {
+      "name": "Drtickagui",
+      "type": "gui",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drtickagui"
+    },
+    {
+      "name": "Hardcobbledust",
+      "type": "item",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardcobbledust"
+    },
+    {
+      "name": "Drtickatickupdate",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drtickatickupdate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Irradiatorblock",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irradiatorblock"
+    },
+    {
+      "name": "Irradiatorgui",
+      "type": "gui",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irradiatorgui"
+    },
+    {
+      "name": "IrradiatorblockUpdateTick",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irradiatorblock_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Irondust",
+      "type": "item",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irondust"
+    },
+    {
+      "name": "Diamonddust",
+      "type": "item",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamonddust"
+    },
+    {
+      "name": "Golddust",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golddust"
+    },
+    {
+      "name": "Emeralddust",
+      "type": "item",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeralddust"
+    },
+    {
+      "name": "Irondustsmelting",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irondustsmelting"
+    },
+    {
+      "name": "Diamonddustsmelting",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamonddustsmelting"
+    },
+    {
+      "name": "Emeralddustsmelting",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeralddustsmelting"
+    },
+    {
+      "name": "Golddustsmelting",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golddustsmelting"
+    },
+    {
+      "name": "Ametrindust",
+      "type": "item",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrindust"
+    },
+    {
+      "name": "Ametrindustsmelting",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrindustsmelting"
+    },
+    {
+      "name": "Chargedneutriniumitem",
+      "type": "item",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chargedneutriniumitem"
+    },
+    {
+      "name": "ProjectD",
+      "type": "tab",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "project_d"
+    },
+    {
+      "name": "Drtickarecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drtickarecipe"
+    },
+    {
+      "name": "Irradiatorrecipe",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irradiatorrecipe"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "hrableavesvanish",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "playerMV",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "bm_dovody",
+      "file": "bm_dovody",
+      "category": "music"
+    },
+    {
+      "name": "radiation",
+      "file": "radiation",
+      "category": "block"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.projected.upgrader1block": "Upgrader lvl. 1",
+      "block.projected.generatormk_2": "Generator mk2",
+      "block.projected.diamondblazedblock": "Diamondblazedblock",
+      "item.projectedz.nutriniumarmorboots": "Nutrinium Armor Boots",
+      "advancements.bmplatnaachievment.title": "Prav� fanda!",
+      "item.projectedz.coal3item": "Coal3lvl",
+      "block.projectedz.hrabplanks": "Hrab Planks",
+      "item.projectedz.irondust": "Iron Dust",
+      "item.projectedz.backpack": "Backpack",
+      "item.projected.fullenchantorb": "Full Enchant Orb",
+      "item.projected.ametrinaxe": "Ametrinaxe",
+      "item.projecdz.coal2item": "Coal 2lvl",
+      "item.projectedz.ametrin": "Ametrin",
+      "item.projecdz.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
+      "block.projected.appleleavesblock": "Apple Leaves",
+      "item.projecdz.chargedneutriniumitem": "Charged Neutrinium",
+      "item.projectedz.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
+      "item.projectedz.ametrinshovel": "Ametrin Shovel",
+      "item.projecdz.nutriniumarmorboots": "Nutrinium Armor Boots",
+      "item.projectedz.fullenchantorb": "Full Enchant Orb",
+      "item.projected.ametrinpicaxe": "Ametrin Pickaxe",
+      "item.projected.coal2item": "Coal 2lvl",
+      "block.projected.ametrinore": "Ametrinore",
+      "block.projectedz.hardenedcbbleblock": "Hardened Cobblestone",
+      "item.projected.daynightswitcher": "Time Orb",
+      "item.projected.ametrinshovel": "Ametrinshovel",
+      "item.projected.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
+      "item.projecdz.ametrindust": "Ametrin Dust",
+      "item.projected.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
+      "item.projectedz.diamonddust": "Diamond Dust",
+      "item.projecdz.nutriniumarmor_chestplate": "Nutrinium Armor Body",
+      "block.projectedz.diamondleaves": "Diamond Leaves",
+      "item.projected.coal1item": "Coal 1lvl",
+      "item.projected.backpack": "Backpack",
+      "item.projecdz.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
+      "block.projected.dialog": "Diamond Log",
+      "item.projected.nutriniumarmorlegs": "Nutrinium Armor Leggings",
+      "item.projected.nutriniumarmorboots": "Nutrinium Armor Boots",
+      "item.projecdz.daynightswitcher": "Time Orb",
+      "item.projectedz.nutriniumarmorbody": "Nutrinium Armor Body",
+      "item.projectedz.daynightswitcher": "Time Orb",
+      "item.projecdz.ametrin": "Ametrin",
+      "advancements.antimatterchievment.descr": "You need craft Anti-Matter",
+      "block.projecdz.hardenedcbbleblock": "Hardened Cobblestone",
+      "item.projectedz.golddust": "Gold Dust",
+      "block.projectedz.diamondblazedblock": "Diamondblazedblock",
+      "item.projectedz.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
+      "block.projecdz.appleleavesblock": "Apple Leaves",
+      "block.projectedz.dialog": "Diamond Log",
+      "item.projected.diamondblazed": "Diamond Blazed",
+      "block.projecdz.hrabplanks": "Hrab Planks",
+      "item.projectedz.diamondblazed": "Diamond Blazed",
+      "item.projecdz.nutriniumarmorlegs": "Nutrinium Armor Leggings",
+      "item.projectedz.chargedneutriniumitem": "Charged Neutrinium",
+      "item.projected.ametrinsword": "Ametrinsword",
+      "item.projectedz.blazedfood": "Blazed Food",
+      "block.projected.hardenedcbbleblock": "Hardened Cobblestone",
+      "item.projectedz.nutriniumsword": "Neutrinium Sword",
+      "block.projecdz.ametrinore": "Ametrinore",
+      "item.projected.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
+      "block.projected.diamondleaves": "Diamond Leaves",
+      "item.projected.neutriniumitem": "Neutrinium",
+      "item.projectedz.ametrinpicaxe": "Ametrin Pickaxe",
+      "advancements.bmplatnaachievment.descr": "Prav� Fanda Bra�a Mojseja",
+      "item.projecdz.nutriniumarmor_helmet": "Nutrinium Armor Helmet",
+      "item.projecdz.diamonddust": "Diamond Dust",
+      "block.projected.hrabblock": "Hrab Log",
+      "item.projecdz.coal1item": "Coal 1lvl",
+      "item.projecdz.irondust": "Iron Dust",
+      "item.projecdz.hardcobbledust": "Hard Cobblestone Dust",
+      "item.projecdz.ametrinshovel": "Ametrin Shovel",
+      "item.projecdz.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
+      "item.projecdz.nutriniumarmor_boots": "Nutrinium Armor Boots",
+      "item.projectedz.coal2item": "Coal 2lvl",
+      "item.projectedz.neutriniumitem": "Neutrinium",
+      "block.projectedz.appleleavesblock": "Apple Leaves",
+      "block.projected.hrabplanks": "Hrab Planks",
+      "item.projected.blazedfood": "Blazed Food",
+      "item.projectedz.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
+      "block.projectedz.irradiatorblock": "Irradiator",
+      "item.projecdz.blazedfood": "Blazed Food",
+      "advancements.antimatterchievment.title": "Anti-Matter !!",
+      "block.projected.generator": "Generator mk1",
+      "item.projecdz.backpack": "Backpack",
+      "item.projected.coal3item": "Coal3lvl",
+      "block.projectedz.upgrader1block": "Upgrader lvl. 1",
+      "item.projectedz.hardcobbledust": "Hard Cobblestone Dust",
+      "block.projecdz.generatormk_2": "Generator mk2",
+      "item.projecdz.neutriniumitem": "Neutrinium",
+      "item.projecdz.nutriniumarmor_leggings": "Nutrinium Armor Leggings",
+      "item.projectedz.emeralddust": "Emerald Dust",
+      "item.projected.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
+      "item.projected.nutriniumsword": "Neutrinium Sword",
+      "item.projecdz.golddust": "Gold Dust",
+      "item.projecdz.ametrinpicaxe": "Ametrin Pickaxe",
+      "block.projectedz.generatormk_2": "Generator mk2",
+      "item.projecdz.ametrinsword": "Ametrin Sword",
+      "block.projecdz.irradiatorblock": "Irradiator",
+      "item.projectedz.nutriniumarmorlegs": "Nutrinium Armor Leggings",
+      "item.projecdz.fullenchantorb": "Full Enchant Orb",
+      "item.projecdz.diamondblazed": "Diamond Blazed",
+      "item.projected.nutriniumarmorbody": "Nutrinium Armor Body",
+      "key.mcreator.neutriniumarmorguikeybind": "Neutriniumarmor GU Ikeybind",
+      "item.projecdz.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
+      "item.projecdz.nutriniumsword": "Neutrinium Sword",
+      "item.projecdz.ametrinaxe": "Ametrinaxe",
+      "item.projectedz.ametrindust": "Ametrin Dust",
+      "block.projecdz.diamondleaves": "Diamond Leaves",
+      "item.projecdz.emeralddust": "Emerald Dust",
+      "block.projecdz.generator": "Generator mk1",
+      "block.projectedz.drtickablock": "Crusher",
+      "item.projectedz.antimatter": "Anti-Matter",
+      "item.projectedz.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
+      "block.projectedz.ametrinore": "Ametrinore",
+      "item.projectedz.coal1item": "Coal 1lvl",
+      "item.projecdz.coal3item": "Coal3lvl",
+      "item.projectedz.ametrinsword": "Ametrin Sword",
+      "item.projecdz.antimatter": "Anti-Matter",
+      "block.projectedz.generator": "Generator mk1",
+      "block.projecdz.diamondblazedblock": "Diamondblazedblock",
+      "item.projecdz.nutriniumarmorbody": "Nutrinium Armor Body",
+      "block.projectedz.hrabblock": "Hrab Log",
+      "item.projectedz.ametrinaxe": "Ametrinaxe",
+      "itemGroup.tabproject_d": "Project D",
+      "block.projecdz.hrabblock": "Hrab Log",
+      "item.projected.ametrin": "Ametrin",
+      "block.projecdz.dialog": "Diamond Log",
+      "block.projecdz.drtickablock": "Crusher"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "projecdz",
+    "modName": "projectDZ",
+    "version": "1.0.0",
+    "author": "dZ, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "bh_logo4",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.projectdz",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000432115
+}

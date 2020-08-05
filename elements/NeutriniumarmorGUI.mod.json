@@ -1,0 +1,134 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 800,
+    "height": 332,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Neutrinium Armor",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "Neutrinium Armor",
+          "x": 340,
+          "y": 77
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Night Vision",
+          "onClick": {
+            "name": "NANVbuttonpresset"
+          },
+          "width": 220,
+          "height": 40,
+          "name": "Night Vision",
+          "x": 36,
+          "y": 97
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Speed",
+          "onClick": {
+            "name": "NASPEEDbutttonpresed"
+          },
+          "width": 200,
+          "height": 40,
+          "name": "Speed",
+          "x": 36,
+          "y": 154
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Slow Fall",
+          "onClick": {
+            "name": "NAslowfall"
+          },
+          "width": 180,
+          "height": 40,
+          "name": "Slow Fall",
+          "x": 639,
+          "y": 97
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Resistance",
+          "onClick": {
+            "name": "NAINVbuttonpress"
+          },
+          "width": 240,
+          "height": 40,
+          "name": "Resistance",
+          "x": 577,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Helm",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Helm",
+          "x": 261,
+          "y": 106
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Boots",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Boots",
+          "x": 239,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Leggins",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Leggins",
+          "x": 563,
+          "y": 101
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Chestplate",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Chestplate",
+          "x": 472,
+          "y": 149
+        }
+      }
+    ]
+  }
+}

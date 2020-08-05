@@ -1,0 +1,20 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "dovodyhod_disck",
+    "name": "Brano Mojsej Tak ma do vody hod!",
+    "description": "Jedine�n� plat�a legend�rneho spev�ka",
+    "creativeTab": {
+      "value": "CUSTOM:ProjectD"
+    },
+    "music": {
+      "value": "CUSTOM:bm_dovody"
+    },
+    "specialInfo": [],
+    "hasGlow": true,
+    "onCrafted": {
+      "name": "Achievmentprocedure"
+    }
+  }
+}

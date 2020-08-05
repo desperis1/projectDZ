@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "green_stained_glass",
+        "1": "iron_bars",
+        "3": "beacon",
+        "4": "redstone_block",
+        "5": "glass",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}
