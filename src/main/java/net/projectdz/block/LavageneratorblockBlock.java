@@ -1,9 +1,9 @@
 
 package net.projectdz.block;
 
-import net.projectdz.procedures.DrtickatickupdateProcedure;
+import net.projectdz.procedures.LavageneratorblockUpdateTickProcedure;
 import net.projectdz.itemgroup.ProjectDItemGroup;
-import net.projectdz.gui.DrtickaguiGui;
+import net.projectdz.gui.LavageneratorguiGui;
 import net.projectdz.ProjecdzModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -12,20 +12,16 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.energy.CapabilityEnergy;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
@@ -58,9 +54,6 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
@@ -79,13 +72,13 @@ import java.util.Collections;
 import io.netty.buffer.Unpooled;
 
 @ProjecdzModElements.ModElement.Tag
-public class DrtickablockBlock extends ProjecdzModElements.ModElement {
-	@ObjectHolder("projecdz:drtickablock")
+public class LavageneratorblockBlock extends ProjecdzModElements.ModElement {
+	@ObjectHolder("projecdz:lavageneratorblock")
 	public static final Block block = null;
-	@ObjectHolder("projecdz:drtickablock")
+	@ObjectHolder("projecdz:lavageneratorblock")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public DrtickablockBlock(ProjecdzModElements instance) {
-		super(instance, 124);
+	public LavageneratorblockBlock(ProjecdzModElements instance) {
+		super(instance, 144);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -97,35 +90,14 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("drtickablock"));
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void clientLoad(FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("lavageneratorblock"));
 	}
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("drtickablock");
-		}
-
-		@Override
-		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return false;
-		}
-
-		@Override
-		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-			return true;
-		}
-
-		@Override
-		public int tickRate(IWorldReader world) {
-			return 25;
+			setRegistryName("lavageneratorblock");
 		}
 
 		@Override
@@ -144,11 +116,6 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
 			return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
-		}
-
-		@Override
-		public PushReaction getPushReaction(BlockState state) {
-			return PushReaction.BLOCK;
 		}
 
 		@Override
@@ -180,7 +147,7 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				DrtickatickupdateProcedure.executeProcedure($_dependencies);
+				LavageneratorblockUpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
@@ -196,12 +163,12 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("Crusher");
+						return new StringTextComponent("Lava Generator");
 					}
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new DrtickaguiGui.GuiContainerMod(id, inventory,
+						return new LavageneratorguiGui.GuiContainerMod(id, inventory,
 								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
 					}
 				}, new BlockPos(x, y, z));
@@ -260,7 +227,7 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -316,7 +283,7 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("drtickablock");
+			return new StringTextComponent("lavageneratorblock");
 		}
 
 		@Override
@@ -326,12 +293,12 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return new DrtickaguiGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
+			return new LavageneratorguiGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Crusher");
+			return new StringTextComponent("Lava Generator");
 		}
 
 		@Override
@@ -346,8 +313,6 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			if (index == 1)
-				return false;
 			return true;
 		}
 
@@ -368,7 +333,7 @@ public class DrtickablockBlock extends ProjecdzModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(2500, 500, 500, 0) {
+		private final EnergyStorage energyStorage = new EnergyStorage(10000, 0, 500, 0) {
 			@Override
 			public int receiveEnergy(int maxReceive, boolean simulate) {
 				int retval = super.receiveEnergy(maxReceive, simulate);

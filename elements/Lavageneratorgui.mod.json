@@ -1,0 +1,70 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Lava Generator",
+          "color": {
+            "value": -52480,
+            "falpha": 0.0
+          },
+          "name": "Lava Generator",
+          "x": 352,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:lavageneratorlevel>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:lavageneratorlevel>",
+          "x": 387,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fuel Value:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Fuel Value:",
+          "x": 272,
+          "y": 106
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.LAVA_BUCKET"
+          },
+          "color": {
+            "value": -52480,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 407,
+          "y": 181
+        }
+      }
+    ]
+  }
+}

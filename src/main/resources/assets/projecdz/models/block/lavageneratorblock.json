@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/blast_furnace_top",
+    "up": "projecdz:blocks/lava_generator_top",
+    "north": "projecdz:blocks/lava_generator_front",
+    "east": "projecdz:blocks/lava_generator_side",
+    "south": "projecdz:blocks/lava_generator_side",
+    "west": "projecdz:blocks/lava_generator_side",
+    "particle": "projecdz:blocks/blast_furnace_top"
+  }
+}
