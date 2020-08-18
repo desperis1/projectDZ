@@ -1,0 +1,20 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:hrabplanks"
+    },
+    "1": {
+      "item": "projecdz:hrabplanks"
+    }
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 4
+  }
+}

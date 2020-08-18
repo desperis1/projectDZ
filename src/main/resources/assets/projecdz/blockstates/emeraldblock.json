@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "projecdz:block/emeraldblock"
+    },
+    "facing=east": {
+      "model": "projecdz:block/emeraldblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "projecdz:block/emeraldblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "projecdz:block/emeraldblock",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "projecdz:block/emeraldblock",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "projecdz:block/emeraldblock",
+      "x": 90
+    }
+  }
+}

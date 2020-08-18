@@ -1,0 +1,42 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:obsidian"
+    },
+    "1": {
+      "item": "minecraft:glowstone"
+    },
+    "2": {
+      "item": "minecraft:obsidian"
+    },
+    "3": {
+      "item": "minecraft:glowstone"
+    },
+    "4": {
+      "item": "projecdz:diamondblazedblock"
+    },
+    "5": {
+      "item": "minecraft:glowstone"
+    },
+    "6": {
+      "item": "minecraft:obsidian"
+    },
+    "7": {
+      "item": "minecraft:glowstone"
+    },
+    "8": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "projecdz:generator",
+    "count": 1
+  }
+}

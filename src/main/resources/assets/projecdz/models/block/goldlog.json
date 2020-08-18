@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/gold_log_top",
+    "up": "projecdz:blocks/gold_log_top",
+    "north": "projecdz:blocks/gold_log",
+    "east": "projecdz:blocks/gold_log",
+    "south": "projecdz:blocks/gold_log",
+    "west": "projecdz:blocks/gold_log",
+    "particle": "projecdz:blocks/gold_log_top"
+  }
+}

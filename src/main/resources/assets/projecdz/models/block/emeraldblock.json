@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/emerald_block",
+    "up": "projecdz:blocks/emerald_block",
+    "north": "projecdz:blocks/emerald_block_side",
+    "east": "projecdz:blocks/emerald_block_side",
+    "south": "projecdz:blocks/emerald_block_side",
+    "west": "projecdz:blocks/emerald_block_side",
+    "particle": "projecdz:blocks/emerald_block"
+  }
+}

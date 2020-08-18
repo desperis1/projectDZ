@@ -4,6 +4,7 @@ import net.projectdz.ProjecdzModElements;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.energy.CapabilityEnergy;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
@@ -43,45 +44,15 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((new Object() {
-			public ItemStack getItemStack(BlockPos pos, int sltid) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+		if ((500 <= (new Object() {
+			public int getEnergyStored(BlockPos pos) {
+				AtomicInteger _retval = new AtomicInteger(0);
 				TileEntity _ent = world.getTileEntity(pos);
-				if (_ent != null) {
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-				}
+				if (_ent != null)
+					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.COBBLESTONE, (int) (1)).getItem())) {
-			if ((Math.random() < 0.7)) {
-				{
-					TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-					if (_ent != null) {
-						final int _sltid = (int) (1);
-						final ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE, (int) (1));
-						_setstack.setCount((int) ((new Object() {
-							public int getAmount(BlockPos pos, int sltid) {
-								AtomicInteger _retval = new AtomicInteger(0);
-								TileEntity _ent = world.getTileEntity(pos);
-								if (_ent != null) {
-									_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).getCount());
-									});
-								}
-								return _retval.get();
-							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							if (capability instanceof IItemHandlerModifiable) {
-								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-							}
-						});
-					}
-				}
-			}
-		} else {
+		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))))) {
 			if (((new Object() {
 				public ItemStack getItemStack(BlockPos pos, int sltid) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -93,13 +64,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 					}
 					return _retval.get();
 				}
-			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.STONE, (int) (1)).getItem())) {
+			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.COBBLESTONE, (int) (1))
+					.getItem())) {
 				if ((Math.random() < 0.7)) {
 					{
 						TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (_ent != null) {
 							final int _sltid = (int) (1);
-							final ItemStack _setstack = new ItemStack(Blocks.STONE, (int) (1));
+							final ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE, (int) (1));
 							_setstack.setCount((int) ((new Object() {
 								public int getAmount(BlockPos pos, int sltid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -119,6 +91,12 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 							});
 						}
 					}
+					{
+						TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+						int _amount = (int) 500;
+						if (_ent != null)
+							_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
+					}
 				}
 			} else {
 				if (((new Object() {
@@ -132,14 +110,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 						}
 						return _retval.get();
 					}
-				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.OAK_LOG, (int) (1))
-						.getItem())) {
-					if ((Math.random() < 0.6)) {
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.STONE, (int) (1)).getItem())) {
+					if ((Math.random() < 0.7)) {
 						{
 							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 							if (_ent != null) {
 								final int _sltid = (int) (1);
-								final ItemStack _setstack = new ItemStack(Blocks.OAK_LOG, (int) (1));
+								final ItemStack _setstack = new ItemStack(Blocks.STONE, (int) (1));
 								_setstack.setCount((int) ((new Object() {
 									public int getAmount(BlockPos pos, int sltid) {
 										AtomicInteger _retval = new AtomicInteger(0);
@@ -159,6 +136,12 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 								});
 							}
 						}
+						{
+							TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							int _amount = (int) 500;
+							if (_ent != null)
+								_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> capability.extractEnergy(_amount, false));
+						}
 					}
 				} else {
 					if (((new Object() {
@@ -172,14 +155,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 							}
 							return _retval.get();
 						}
-					}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.SPRUCE_LOG, (int) (1))
+					}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.OAK_LOG, (int) (1))
 							.getItem())) {
 						if ((Math.random() < 0.6)) {
 							{
 								TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 								if (_ent != null) {
 									final int _sltid = (int) (1);
-									final ItemStack _setstack = new ItemStack(Blocks.SPRUCE_LOG, (int) (1));
+									final ItemStack _setstack = new ItemStack(Blocks.OAK_LOG, (int) (1));
 									_setstack.setCount((int) ((new Object() {
 										public int getAmount(BlockPos pos, int sltid) {
 											AtomicInteger _retval = new AtomicInteger(0);
@@ -199,6 +182,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 									});
 								}
 							}
+							{
+								TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+								int _amount = (int) 500;
+								if (_ent != null)
+									_ent.getCapability(CapabilityEnergy.ENERGY, null)
+											.ifPresent(capability -> capability.extractEnergy(_amount, false));
+							}
 						}
 					} else {
 						if (((new Object() {
@@ -212,14 +202,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 								}
 								return _retval.get();
 							}
-						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.BIRCH_LOG, (int) (1))
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(Blocks.SPRUCE_LOG, (int) (1))
 								.getItem())) {
 							if ((Math.random() < 0.6)) {
 								{
 									TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 									if (_ent != null) {
 										final int _sltid = (int) (1);
-										final ItemStack _setstack = new ItemStack(Blocks.BIRCH_LOG, (int) (1));
+										final ItemStack _setstack = new ItemStack(Blocks.SPRUCE_LOG, (int) (1));
 										_setstack.setCount((int) ((new Object() {
 											public int getAmount(BlockPos pos, int sltid) {
 												AtomicInteger _retval = new AtomicInteger(0);
@@ -239,6 +229,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 										});
 									}
 								}
+								{
+									TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+									int _amount = (int) 500;
+									if (_ent != null)
+										_ent.getCapability(CapabilityEnergy.ENERGY, null)
+												.ifPresent(capability -> capability.extractEnergy(_amount, false));
+								}
 							}
 						} else {
 							if (((new Object() {
@@ -253,13 +250,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 									return _retval.get();
 								}
 							}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-									.getItem() == new ItemStack(Blocks.JUNGLE_LOG, (int) (1)).getItem())) {
+									.getItem() == new ItemStack(Blocks.BIRCH_LOG, (int) (1)).getItem())) {
 								if ((Math.random() < 0.6)) {
 									{
 										TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 										if (_ent != null) {
 											final int _sltid = (int) (1);
-											final ItemStack _setstack = new ItemStack(Blocks.JUNGLE_LOG, (int) (1));
+											final ItemStack _setstack = new ItemStack(Blocks.BIRCH_LOG, (int) (1));
 											_setstack.setCount((int) ((new Object() {
 												public int getAmount(BlockPos pos, int sltid) {
 													AtomicInteger _retval = new AtomicInteger(0);
@@ -280,6 +277,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 											});
 										}
 									}
+									{
+										TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+										int _amount = (int) 500;
+										if (_ent != null)
+											_ent.getCapability(CapabilityEnergy.ENERGY, null)
+													.ifPresent(capability -> capability.extractEnergy(_amount, false));
+									}
 								}
 							} else {
 								if (((new Object() {
@@ -294,13 +298,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 										return _retval.get();
 									}
 								}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-										.getItem() == new ItemStack(Blocks.ACACIA_LOG, (int) (1)).getItem())) {
+										.getItem() == new ItemStack(Blocks.JUNGLE_LOG, (int) (1)).getItem())) {
 									if ((Math.random() < 0.6)) {
 										{
 											TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 											if (_ent != null) {
 												final int _sltid = (int) (1);
-												final ItemStack _setstack = new ItemStack(Blocks.ACACIA_LOG, (int) (1));
+												final ItemStack _setstack = new ItemStack(Blocks.JUNGLE_LOG, (int) (1));
 												_setstack.setCount((int) ((new Object() {
 													public int getAmount(BlockPos pos, int sltid) {
 														AtomicInteger _retval = new AtomicInteger(0);
@@ -321,6 +325,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 												});
 											}
 										}
+										{
+											TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+											int _amount = (int) 500;
+											if (_ent != null)
+												_ent.getCapability(CapabilityEnergy.ENERGY, null)
+														.ifPresent(capability -> capability.extractEnergy(_amount, false));
+										}
 									}
 								} else {
 									if (((new Object() {
@@ -335,13 +346,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 											return _retval.get();
 										}
 									}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-											.getItem() == new ItemStack(Blocks.DARK_OAK_LOG, (int) (1)).getItem())) {
+											.getItem() == new ItemStack(Blocks.ACACIA_LOG, (int) (1)).getItem())) {
 										if ((Math.random() < 0.6)) {
 											{
 												TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 												if (_ent != null) {
 													final int _sltid = (int) (1);
-													final ItemStack _setstack = new ItemStack(Blocks.DARK_OAK_LOG, (int) (1));
+													final ItemStack _setstack = new ItemStack(Blocks.ACACIA_LOG, (int) (1));
 													_setstack.setCount((int) ((new Object() {
 														public int getAmount(BlockPos pos, int sltid) {
 															AtomicInteger _retval = new AtomicInteger(0);
@@ -362,6 +373,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 													});
 												}
 											}
+											{
+												TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+												int _amount = (int) 500;
+												if (_ent != null)
+													_ent.getCapability(CapabilityEnergy.ENERGY, null)
+															.ifPresent(capability -> capability.extractEnergy(_amount, false));
+											}
 										}
 									} else {
 										if (((new Object() {
@@ -376,13 +394,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 												return _retval.get();
 											}
 										}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-												.getItem() == new ItemStack(Blocks.SAND, (int) (1)).getItem())) {
+												.getItem() == new ItemStack(Blocks.DARK_OAK_LOG, (int) (1)).getItem())) {
 											if ((Math.random() < 0.6)) {
 												{
 													TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 													if (_ent != null) {
 														final int _sltid = (int) (1);
-														final ItemStack _setstack = new ItemStack(Blocks.SAND, (int) (1));
+														final ItemStack _setstack = new ItemStack(Blocks.DARK_OAK_LOG, (int) (1));
 														_setstack.setCount((int) ((new Object() {
 															public int getAmount(BlockPos pos, int sltid) {
 																AtomicInteger _retval = new AtomicInteger(0);
@@ -404,6 +422,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																});
 													}
 												}
+												{
+													TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+													int _amount = (int) 500;
+													if (_ent != null)
+														_ent.getCapability(CapabilityEnergy.ENERGY, null)
+																.ifPresent(capability -> capability.extractEnergy(_amount, false));
+												}
 											}
 										} else {
 											if (((new Object() {
@@ -419,13 +444,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 													return _retval.get();
 												}
 											}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-													.getItem() == new ItemStack(Blocks.GRAVEL, (int) (1)).getItem())) {
+													.getItem() == new ItemStack(Blocks.SAND, (int) (1)).getItem())) {
 												if ((Math.random() < 0.6)) {
 													{
 														TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 														if (_ent != null) {
 															final int _sltid = (int) (1);
-															final ItemStack _setstack = new ItemStack(Blocks.GRAVEL, (int) (1));
+															final ItemStack _setstack = new ItemStack(Blocks.SAND, (int) (1));
 															_setstack.setCount((int) ((new Object() {
 																public int getAmount(BlockPos pos, int sltid) {
 																	AtomicInteger _retval = new AtomicInteger(0);
@@ -447,6 +472,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																	});
 														}
 													}
+													{
+														TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+														int _amount = (int) 500;
+														if (_ent != null)
+															_ent.getCapability(CapabilityEnergy.ENERGY, null)
+																	.ifPresent(capability -> capability.extractEnergy(_amount, false));
+													}
 												}
 											} else {
 												if (((new Object() {
@@ -462,13 +494,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 														return _retval.get();
 													}
 												}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-														.getItem() == new ItemStack(Items.ENDER_PEARL, (int) (1)).getItem())) {
-													if ((Math.random() < 0.35)) {
+														.getItem() == new ItemStack(Blocks.GRAVEL, (int) (1)).getItem())) {
+													if ((Math.random() < 0.6)) {
 														{
 															TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 															if (_ent != null) {
 																final int _sltid = (int) (1);
-																final ItemStack _setstack = new ItemStack(Items.ENDER_PEARL, (int) (1));
+																final ItemStack _setstack = new ItemStack(Blocks.GRAVEL, (int) (1));
 																_setstack.setCount((int) ((new Object() {
 																	public int getAmount(BlockPos pos, int sltid) {
 																		AtomicInteger _retval = new AtomicInteger(0);
@@ -491,6 +523,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																		});
 															}
 														}
+														{
+															TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+															int _amount = (int) 500;
+															if (_ent != null)
+																_ent.getCapability(CapabilityEnergy.ENERGY, null)
+																		.ifPresent(capability -> capability.extractEnergy(_amount, false));
+														}
 													}
 												} else {
 													if (((new Object() {
@@ -506,13 +545,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 															return _retval.get();
 														}
 													}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-															.getItem() == new ItemStack(Items.CLAY_BALL, (int) (1)).getItem())) {
-														if ((Math.random() < 0.6)) {
+															.getItem() == new ItemStack(Items.ENDER_PEARL, (int) (1)).getItem())) {
+														if ((Math.random() < 0.35)) {
 															{
 																TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 																if (_ent != null) {
 																	final int _sltid = (int) (1);
-																	final ItemStack _setstack = new ItemStack(Items.CLAY_BALL, (int) (1));
+																	final ItemStack _setstack = new ItemStack(Items.ENDER_PEARL, (int) (1));
 																	_setstack.setCount((int) ((new Object() {
 																		public int getAmount(BlockPos pos, int sltid) {
 																			AtomicInteger _retval = new AtomicInteger(0);
@@ -535,6 +574,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																			});
 																}
 															}
+															{
+																TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+																int _amount = (int) 500;
+																if (_ent != null)
+																	_ent.getCapability(CapabilityEnergy.ENERGY, null)
+																			.ifPresent(capability -> capability.extractEnergy(_amount, false));
+															}
 														}
 													} else {
 														if (((new Object() {
@@ -550,13 +596,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																return _retval.get();
 															}
 														}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-																.getItem() == new ItemStack(Blocks.NETHERRACK, (int) (1)).getItem())) {
+																.getItem() == new ItemStack(Items.CLAY_BALL, (int) (1)).getItem())) {
 															if ((Math.random() < 0.6)) {
 																{
 																	TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 																	if (_ent != null) {
 																		final int _sltid = (int) (1);
-																		final ItemStack _setstack = new ItemStack(Blocks.NETHERRACK, (int) (1));
+																		final ItemStack _setstack = new ItemStack(Items.CLAY_BALL, (int) (1));
 																		_setstack.setCount((int) ((new Object() {
 																			public int getAmount(BlockPos pos, int sltid) {
 																				AtomicInteger _retval = new AtomicInteger(0);
@@ -580,6 +626,13 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																				});
 																	}
 																}
+																{
+																	TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+																	int _amount = (int) 500;
+																	if (_ent != null)
+																		_ent.getCapability(CapabilityEnergy.ENERGY, null)
+																				.ifPresent(capability -> capability.extractEnergy(_amount, false));
+																}
 															}
 														} else {
 															if (((new Object() {
@@ -595,14 +648,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																	return _retval.get();
 																}
 															}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-																	.getItem() == new ItemStack(Items.QUARTZ, (int) (1)).getItem())) {
-																if ((Math.random() < 0.7)) {
+																	.getItem() == new ItemStack(Blocks.NETHERRACK, (int) (1)).getItem())) {
+																if ((Math.random() < 0.6)) {
 																	{
 																		TileEntity _ent = world
 																				.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 																		if (_ent != null) {
 																			final int _sltid = (int) (1);
-																			final ItemStack _setstack = new ItemStack(Items.QUARTZ, (int) (1));
+																			final ItemStack _setstack = new ItemStack(Blocks.NETHERRACK, (int) (1));
 																			_setstack.setCount((int) ((new Object() {
 																				public int getAmount(BlockPos pos, int sltid) {
 																					AtomicInteger _retval = new AtomicInteger(0);
@@ -627,6 +680,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																					});
 																		}
 																	}
+																	{
+																		TileEntity _ent = world
+																				.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+																		int _amount = (int) 500;
+																		if (_ent != null)
+																			_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(
+																					capability -> capability.extractEnergy(_amount, false));
+																	}
 																}
 															} else {
 																if (((new Object() {
@@ -642,15 +703,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																		return _retval.get();
 																	}
 																}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-																		.getItem() == new ItemStack(Items.GLOWSTONE_DUST, (int) (1)).getItem())) {
-																	if ((Math.random() < 0.5)) {
+																		.getItem() == new ItemStack(Items.QUARTZ, (int) (1)).getItem())) {
+																	if ((Math.random() < 0.7)) {
 																		{
 																			TileEntity _ent = world
 																					.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 																			if (_ent != null) {
 																				final int _sltid = (int) (1);
-																				final ItemStack _setstack = new ItemStack(Items.GLOWSTONE_DUST,
-																						(int) (1));
+																				final ItemStack _setstack = new ItemStack(Items.QUARTZ, (int) (1));
 																				_setstack.setCount((int) ((new Object() {
 																					public int getAmount(BlockPos pos, int sltid) {
 																						AtomicInteger _retval = new AtomicInteger(0);
@@ -676,6 +736,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																						});
 																			}
 																		}
+																		{
+																			TileEntity _ent = world
+																					.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+																			int _amount = (int) 500;
+																			if (_ent != null)
+																				_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(
+																						capability -> capability.extractEnergy(_amount, false));
+																		}
 																	}
 																} else {
 																	if (((new Object() {
@@ -692,14 +760,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																			return _retval.get();
 																		}
 																	}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-																			.getItem() == new ItemStack(Items.SLIME_BALL, (int) (1)).getItem())) {
+																			.getItem() == new ItemStack(Items.GLOWSTONE_DUST, (int) (1)).getItem())) {
 																		if ((Math.random() < 0.5)) {
 																			{
 																				TileEntity _ent = world
 																						.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 																				if (_ent != null) {
 																					final int _sltid = (int) (1);
-																					final ItemStack _setstack = new ItemStack(Items.SLIME_BALL,
+																					final ItemStack _setstack = new ItemStack(Items.GLOWSTONE_DUST,
 																							(int) (1));
 																					_setstack.setCount((int) ((new Object() {
 																						public int getAmount(BlockPos pos, int sltid) {
@@ -727,6 +795,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																							});
 																				}
 																			}
+																			{
+																				TileEntity _ent = world
+																						.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+																				int _amount = (int) 500;
+																				if (_ent != null)
+																					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(
+																							capability -> capability.extractEnergy(_amount, false));
+																			}
 																		}
 																	} else {
 																		if (((new Object() {
@@ -743,14 +819,14 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																				return _retval.get();
 																			}
 																		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
-																				.getItem() == new ItemStack(Items.INK_SAC, (int) (1)).getItem())) {
+																				.getItem() == new ItemStack(Items.SLIME_BALL, (int) (1)).getItem())) {
 																			if ((Math.random() < 0.5)) {
 																				{
 																					TileEntity _ent = world
 																							.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 																					if (_ent != null) {
 																						final int _sltid = (int) (1);
-																						final ItemStack _setstack = new ItemStack(Items.INK_SAC,
+																						final ItemStack _setstack = new ItemStack(Items.SLIME_BALL,
 																								(int) (1));
 																						_setstack.setCount((int) ((new Object() {
 																							public int getAmount(BlockPos pos, int sltid) {
@@ -777,6 +853,81 @@ public class Generatormk2UpdateTickProcedure extends ProjecdzModElements.ModElem
 																												.setStackInSlot(_sltid, _setstack);
 																									}
 																								});
+																					}
+																				}
+																				{
+																					TileEntity _ent = world
+																							.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+																					int _amount = (int) 500;
+																					if (_ent != null)
+																						_ent.getCapability(CapabilityEnergy.ENERGY, null)
+																								.ifPresent(capability -> capability
+																										.extractEnergy(_amount, false));
+																				}
+																			}
+																		} else {
+																			if (((new Object() {
+																				public ItemStack getItemStack(BlockPos pos, int sltid) {
+																					AtomicReference<ItemStack> _retval = new AtomicReference<>(
+																							ItemStack.EMPTY);
+																					TileEntity _ent = world.getTileEntity(pos);
+																					if (_ent != null) {
+																						_ent.getCapability(
+																								CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+																								.ifPresent(capability -> {
+																									_retval.set(
+																											capability.getStackInSlot(sltid).copy());
+																								});
+																					}
+																					return _retval.get();
+																				}
+																			}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0)))
+																					.getItem() == new ItemStack(Items.INK_SAC, (int) (1))
+																							.getItem())) {
+																				if ((Math.random() < 0.5)) {
+																					{
+																						TileEntity _ent = world.getTileEntity(
+																								new BlockPos((int) x, (int) y, (int) z));
+																						if (_ent != null) {
+																							final int _sltid = (int) (1);
+																							final ItemStack _setstack = new ItemStack(Items.INK_SAC,
+																									(int) (1));
+																							_setstack.setCount((int) ((new Object() {
+																								public int getAmount(BlockPos pos, int sltid) {
+																									AtomicInteger _retval = new AtomicInteger(0);
+																									TileEntity _ent = world.getTileEntity(pos);
+																									if (_ent != null) {
+																										_ent.getCapability(
+																												CapabilityItemHandler.ITEM_HANDLER_CAPABILITY,
+																												null).ifPresent(capability -> {
+																													_retval.set(capability
+																															.getStackInSlot(sltid)
+																															.getCount());
+																												});
+																									}
+																									return _retval.get();
+																								}
+																							}.getAmount(new BlockPos((int) x, (int) y, (int) z),
+																									(int) (1))) + 1));
+																							_ent.getCapability(
+																									CapabilityItemHandler.ITEM_HANDLER_CAPABILITY,
+																									null).ifPresent(capability -> {
+																										if (capability instanceof IItemHandlerModifiable) {
+																											((IItemHandlerModifiable) capability)
+																													.setStackInSlot(_sltid,
+																															_setstack);
+																										}
+																									});
+																						}
+																					}
+																					{
+																						TileEntity _ent = world.getTileEntity(
+																								new BlockPos((int) x, (int) y, (int) z));
+																						int _amount = (int) 500;
+																						if (_ent != null)
+																							_ent.getCapability(CapabilityEnergy.ENERGY, null)
+																									.ifPresent(capability -> capability
+																											.extractEnergy(_amount, false));
 																					}
 																				}
 																			}

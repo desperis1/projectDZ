@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "projecdz:blocks/hola_bilka",
+    "particle": "projecdz:blocks/hola_bilka"
+  }
+}

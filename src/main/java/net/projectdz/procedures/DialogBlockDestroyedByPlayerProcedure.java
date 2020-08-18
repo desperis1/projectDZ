@@ -1,9 +1,9 @@
 package net.projectdz.procedures;
 
+import net.projectdz.item.DiamonddustItem;
 import net.projectdz.ProjecdzModElements;
 
 import net.minecraft.world.IWorld;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 
@@ -38,7 +38,7 @@ public class DialogBlockDestroyedByPlayerProcedure extends ProjecdzModElements.M
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((Math.random() < 0.25)) {
 			if (!world.getWorld().isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(Items.DIAMOND, (int) (1)));
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(DiamonddustItem.block, (int) (1)));
 				entityToSpawn.setPickupDelay(10);
 				world.addEntity(entityToSpawn);
 			}

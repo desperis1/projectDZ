@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/emerald_leaves",
+    "up": "projecdz:blocks/emerald_leaves",
+    "north": "projecdz:blocks/emerald_leaves",
+    "east": "projecdz:blocks/emerald_leaves",
+    "south": "projecdz:blocks/emerald_leaves",
+    "west": "projecdz:blocks/emerald_leaves",
+    "particle": "projecdz:blocks/emerald_leaves"
+  }
+}

@@ -1,5 +1,9 @@
 {
-  "id_map": {},
+  "id_map": {
+    "DIMENSION": 1,
+    "GUI": 7,
+    "ENTITY": 6
+  },
   "mod_elements": [
     {
       "name": "Hrabblock",
@@ -273,7 +277,9 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {
+        "0": 1
+      }
     },
     {
       "name": "NeutriniumarmorGUIkeybindOnKeyPressed",
@@ -505,7 +511,9 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {
+        "0": 2
+      }
     },
     {
       "name": "Generatormk1procedure",
@@ -759,7 +767,9 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
+      "ids": {
+        "0": 3
+      },
       "registry_name": "generatormk_2_gui"
     },
     {
@@ -914,7 +924,9 @@
       "sortid": 119,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
+      "ids": {
+        "0": 4
+      },
       "registry_name": "backpackgui"
     },
     {
@@ -976,7 +988,9 @@
       "sortid": 125,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
+      "ids": {
+        "0": 5
+      },
       "registry_name": "drtickagui"
     },
     {
@@ -1032,7 +1046,9 @@
       "sortid": 128,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
+      "ids": {
+        "0": 6
+      },
       "registry_name": "irradiatorgui"
     },
     {
@@ -1205,7 +1221,9 @@
       "sortid": 145,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
+      "ids": {
+        "0": 7
+      },
       "registry_name": "lavageneratorgui"
     },
     {
@@ -1312,6 +1330,617 @@
           }
         ]
       }
+    },
+    {
+      "name": "Ametrindimension",
+      "type": "dimension",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 1
+      },
+      "registry_name": "ametrindimension"
+    },
+    {
+      "name": "AmetrincmdCommandExecuted",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrincmd_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ametrincmd",
+      "type": "command",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrincmd"
+    },
+    {
+      "name": "Ameforestdimension",
+      "type": "biome",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ameforestdimension"
+    },
+    {
+      "name": "GoldlogBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldlog_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goldlog",
+      "type": "block",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldlog"
+    },
+    {
+      "name": "DiamondLeavesBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_leaves_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldleavesBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldleaves_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goldleaves",
+      "type": "block",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldleaves"
+    },
+    {
+      "name": "Ameforestgold",
+      "type": "biome",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ameforestgold"
+    },
+    {
+      "name": "Ghostgrey",
+      "type": "mob",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1,
+        "1": 2
+      },
+      "registry_name": "ghostgrey"
+    },
+    {
+      "name": "Emeraldblock",
+      "type": "block",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldblock"
+    },
+    {
+      "name": "Emraldleaves",
+      "type": "block",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emraldleaves"
+    },
+    {
+      "name": "Ametrinemerald",
+      "type": "biome",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinemerald"
+    },
+    {
+      "name": "Ametrinemeraldzrucanina1",
+      "type": "structure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinemeraldzrucanina_1"
+    },
+    {
+      "name": "EmeraldblockBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldblock_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmraldleavesBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emraldleaves_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spadnutyoak",
+      "type": "structure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spadnutyoak"
+    },
+    {
+      "name": "Blueplantametrin",
+      "type": "plant",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueplantametrin"
+    },
+    {
+      "name": "Nakedplant",
+      "type": "plant",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nakedplant"
+    },
+    {
+      "name": "Purplearrow",
+      "type": "plant",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purplearrow"
+    },
+    {
+      "name": "Yellowhatty",
+      "type": "plant",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellowhatty"
+    },
+    {
+      "name": "Ametrincow",
+      "type": "mob",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3,
+        "1": 4
+      },
+      "registry_name": "ametrincow"
+    },
+    {
+      "name": "Ametrinenderman",
+      "type": "mob",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 5,
+        "1": 6
+      },
+      "registry_name": "ametrinenderman"
+    },
+    {
+      "name": "Clawgoblin",
+      "type": "mob",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "clawgoblin"
+    },
+    {
+      "name": "Ametrinboomerang",
+      "type": "gun",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinboomerang"
+    },
+    {
+      "name": "AmetrinboomerangBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinboomerang_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ametrinboomerangrecipe",
+      "type": "recipe",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrinboomerangrecipe"
+    },
+    {
+      "name": "Diamondminitree",
+      "type": "structure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondminitree"
+    },
+    {
+      "name": "Diamondyoungtree",
+      "type": "structure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondyoungtree"
+    },
+    {
+      "name": "Goldminitree",
+      "type": "structure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldminitree"
+    },
+    {
+      "name": "Goldyoungtree",
+      "type": "structure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goldyoungtree"
+    },
+    {
+      "name": "Emeraldminitree",
+      "type": "structure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldminitree"
+    },
+    {
+      "name": "Emeraldyoungtree",
+      "type": "structure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emeraldyoungtree"
+    },
+    {
+      "name": "Levibiome",
+      "type": "biome",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "levibiome"
+    },
+    {
+      "name": "Leviostrovdefaultametrin",
+      "type": "structure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leviostrovdefaultametrin"
+    },
+    {
+      "name": "Leviostrovlake",
+      "type": "structure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leviostrovlake"
+    },
+    {
+      "name": "Leviostrovemerald",
+      "type": "structure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leviostrovemerald"
+    },
+    {
+      "name": "Leviostrovdiamond",
+      "type": "structure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leviostrovdiamond"
+    },
+    {
+      "name": "Levibiomeruins",
+      "type": "structure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "levibiomeruins"
+    },
+    {
+      "name": "BlueplantcreamRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueplantcream_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blueplantcream",
+      "type": "item",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueplantcream"
+    },
+    {
+      "name": "PurplecreamRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purplecream_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Purplecream",
+      "type": "item",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purplecream"
+    },
+    {
+      "name": "YellowcreamRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellowcream_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Yellowcream",
+      "type": "item",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellowcream"
+    },
+    {
+      "name": "Maxhealth40OnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maxhealth_40_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Maxhealth40",
+      "type": "potion",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maxhealth_40"
     }
   ],
   "variable_elements": [
@@ -1342,137 +1971,220 @@
   ],
   "language_map": {
     "en_us": {
-      "block.projected.upgrader1block": "Upgrader lvl. 1",
+      "item.diamondblazed.name": "Diamond Blazed",
+      "item.ametrinsword.name": "Ametrin Sword",
       "block.projected.generatormk_2": "Generator mk2",
-      "block.projected.diamondblazedblock": "Diamondblazedblock",
       "item.projectedz.nutriniumarmorboots": "Nutrinium Armor Boots",
-      "advancements.bmplatnaachievment.title": "Prav� fanda!",
-      "item.projectedz.coal3item": "Coal3lvl",
-      "block.projectedz.hrabplanks": "Hrab Planks",
+      "item.golddust.name": "Gold Dust",
+      "item.projecdz.ametrinboomerang": "Ametrin Boomerang",
       "item.projectedz.irondust": "Iron Dust",
-      "item.projectedz.backpack": "Backpack",
-      "item.projected.fullenchantorb": "Full Enchant Orb",
-      "item.projected.ametrinaxe": "Ametrinaxe",
+      "item.electromeritem.name": "Electromer",
       "item.projecdz.coal2item": "Coal 2lvl",
-      "item.projectedz.ametrin": "Ametrin",
+      "item.coal1item.name": "Coal 1lvl",
+      "tile.blueplantametrin.name": "Bonny Blue",
       "item.projecdz.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
       "block.projected.appleleavesblock": "Apple Leaves",
-      "item.projecdz.chargedneutriniumitem": "Charged Neutrinium",
+      "item.fullenchantorb.name": "Full Enchant Orb",
       "item.projectedz.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
-      "block.projecdz.batteryblockmk_1": "Battery Block MK1",
+      "item.ametrindimension.name": "Ametrindimension Portal Igniter",
       "item.projectedz.ametrinshovel": "Ametrin Shovel",
-      "item.projecdz.nutriniumarmorboots": "Nutrinium Armor Boots",
       "item.projected.ametrinpicaxe": "Ametrin Pickaxe",
       "item.projectedz.fullenchantorb": "Full Enchant Orb",
       "item.projected.coal2item": "Coal 2lvl",
-      "block.projected.ametrinore": "Ametrinore",
       "block.projectedz.hardenedcbbleblock": "Hardened Cobblestone",
-      "item.projected.daynightswitcher": "Time Orb",
       "item.projected.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
       "item.projected.ametrinshovel": "Ametrinshovel",
-      "item.projecdz.ametrindust": "Ametrin Dust",
       "item.projected.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
       "item.projectedz.diamonddust": "Diamond Dust",
-      "item.projecdz.nutriniumarmor_chestplate": "Nutrinium Armor Body",
-      "item.projected.coal1item": "Coal 1lvl",
-      "block.projectedz.diamondleaves": "Diamond Leaves",
       "item.projected.backpack": "Backpack",
-      "item.projecdz.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
       "block.projected.dialog": "Diamond Log",
       "item.projected.nutriniumarmorlegs": "Nutrinium Armor Leggings",
-      "item.projected.nutriniumarmorboots": "Nutrinium Armor Boots",
-      "item.projecdz.daynightswitcher": "Time Orb",
-      "item.projectedz.nutriniumarmorbody": "Nutrinium Armor Body",
+      "tile.hrabplanks.name": "Hrab Planks",
       "item.projectedz.daynightswitcher": "Time Orb",
       "item.projecdz.ametrin": "Ametrin",
       "advancements.antimatterchievment.descr": "You need craft Anti-Matter",
       "block.projecdz.hardenedcbbleblock": "Hardened Cobblestone",
       "item.projectedz.golddust": "Gold Dust",
+      "item.projecdz.ametrincow": "Ametrin Cow Spawn Egg",
+      "item.bmdovodyhod.name": "Brano Mojsej Tak ma do vody hod!",
+      "entity.projecdz.ametrinenderman": "Ametrin Enderman",
       "block.projectedz.diamondblazedblock": "Diamondblazedblock",
       "item.projectedz.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
       "block.projecdz.appleleavesblock": "Apple Leaves",
-      "block.projectedz.dialog": "Diamond Log",
-      "item.projected.diamondblazed": "Diamond Blazed",
-      "block.projecdz.hrabplanks": "Hrab Planks",
-      "item.projectedz.diamondblazed": "Diamond Blazed",
-      "item.projecdz.nutriniumarmorlegs": "Nutrinium Armor Leggings",
-      "item.projectedz.chargedneutriniumitem": "Charged Neutrinium",
-      "item.projected.ametrinsword": "Ametrinsword",
+      "tile.drtickablock.name": "Crusher",
+      "tile.ametrinore.name": "Ametrinore",
+      "effect.maxhealth_40": "Boosted Health",
+      "tile.purplearrow.name": "Purple Arrow",
+      "block.projecdz.goldlog": "Gold Log",
       "item.projectedz.blazedfood": "Blazed Food",
-      "block.projected.hardenedcbbleblock": "Hardened Cobblestone",
       "item.projectedz.nutriniumsword": "Neutrinium Sword",
-      "block.projecdz.ametrinore": "Ametrinore",
-      "item.projected.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
+      "entity.ametrincow.name": "Ametrin Cow",
       "block.projected.diamondleaves": "Diamond Leaves",
       "item.projected.neutriniumitem": "Neutrinium",
       "item.projectedz.ametrinpicaxe": "Ametrin Pickaxe",
+      "tile.diamondblazedblock.name": "Diamondblazedblock",
       "advancements.bmplatnaachievment.descr": "Prav� Fanda Bra�a Mojseja",
+      "item.hardcobbledust.name": "Hard Cobblestone Dust",
+      "tile.diamondleaves.name": "Diamond Leaves",
+      "item.projecdz.clawgoblin": "Claw Goblin Spawn Egg",
       "item.projecdz.nutriniumarmor_helmet": "Nutrinium Armor Helmet",
-      "item.projecdz.diamonddust": "Diamond Dust",
       "block.projected.hrabblock": "Hrab Log",
-      "item.projecdz.coal1item": "Coal 1lvl",
-      "item.projecdz.irondust": "Iron Dust",
       "block.projecdz.lavageneratorblock": "Lava Generator",
-      "item.projecdz.hardcobbledust": "Hard Cobblestone Dust",
       "item.projecdz.ametrinshovel": "Ametrin Shovel",
-      "item.projecdz.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
-      "item.projecdz.nutriniumarmor_boots": "Nutrinium Armor Boots",
       "item.projectedz.coal2item": "Coal 2lvl",
       "item.projectedz.neutriniumitem": "Neutrinium",
-      "block.projectedz.appleleavesblock": "Apple Leaves",
-      "block.projected.hrabplanks": "Hrab Planks",
-      "item.projected.blazedfood": "Blazed Food",
-      "item.projectedz.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
       "block.projectedz.irradiatorblock": "Irradiator",
       "item.projecdz.blazedfood": "Blazed Food",
       "advancements.antimatterchievment.title": "Anti-Matter !!",
       "item.projecdz.electromeritem": "Electromer",
-      "block.projected.generator": "Generator mk1",
       "item.projecdz.backpack": "Backpack",
+      "tile.yellowhatty.name": "Yellow Hatty",
       "item.projected.coal3item": "Coal3lvl",
       "block.projectedz.upgrader1block": "Upgrader lvl. 1",
+      "block.projecdz.purplearrow": "Purple Arrow",
+      "item.minecraft.potion.effect.maxhealth_40": "Potion of Health Boost",
       "item.projectedz.hardcobbledust": "Hard Cobblestone Dust",
-      "block.projecdz.generatormk_2": "Generator mk2",
-      "item.projecdz.neutriniumitem": "Neutrinium",
       "item.projecdz.nutriniumarmor_leggings": "Nutrinium Armor Leggings",
-      "item.projectedz.emeralddust": "Emerald Dust",
-      "item.projected.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
+      "item.daynightswitcher.name": "Time Orb",
       "item.projected.nutriniumsword": "Neutrinium Sword",
+      "tile.batteryblockmk_1.name": "Battery Block MK1",
       "item.projecdz.golddust": "Gold Dust",
-      "item.projecdz.ametrinpicaxe": "Ametrin Pickaxe",
-      "block.projectedz.generatormk_2": "Generator mk2",
-      "item.projecdz.ametrinsword": "Ametrin Sword",
-      "block.projecdz.irradiatorblock": "Irradiator",
+      "block.projecdz.emeraldblock": "Emeral Log",
+      "tile.dialog.name": "Diamond Log",
+      "item.ametrinshovel.name": "Ametrin Shovel",
+      "item.ametrinaxe.name": "Ametrinaxe",
       "item.projectedz.nutriniumarmorlegs": "Nutrinium Armor Leggings",
       "item.projecdz.fullenchantorb": "Full Enchant Orb",
-      "item.projecdz.diamondblazed": "Diamond Blazed",
       "item.projected.nutriniumarmorbody": "Nutrinium Armor Body",
       "key.mcreator.neutriniumarmorguikeybind": "Neutriniumarmor GU Ikeybind",
-      "item.projecdz.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
-      "item.projecdz.nutriniumsword": "Neutrinium Sword",
       "item.projecdz.ametrinaxe": "Ametrinaxe",
-      "item.projectedz.ametrindust": "Ametrin Dust",
       "block.projecdz.diamondleaves": "Diamond Leaves",
       "item.projecdz.emeralddust": "Emerald Dust",
       "block.projecdz.generator": "Generator mk1",
-      "block.projectedz.drtickablock": "Crusher",
-      "item.projectedz.antimatter": "Anti-Matter",
-      "item.projectedz.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
+      "item.emeralddust.name": "Emerald Dust",
+      "item.record.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
       "block.projectedz.ametrinore": "Ametrinore",
       "item.projectedz.coal1item": "Coal 1lvl",
+      "tile.generator.name": "Generator mk1",
       "item.projecdz.coal3item": "Coal3lvl",
       "item.projectedz.ametrinsword": "Ametrin Sword",
       "item.projecdz.antimatter": "Anti-Matter",
       "block.projectedz.generator": "Generator mk1",
       "block.projecdz.diamondblazedblock": "Diamondblazedblock",
+      "item.projecdz.blueplantcream": "Blue Cream",
+      "itemGroup.tabproject_d": "Project D",
+      "item.ametrinpicaxe.name": "Ametrin Pickaxe",
+      "item.projected.ametrin": "Ametrin",
+      "block.projecdz.dialog": "Diamond Log",
+      "block.projected.upgrader1block": "Upgrader lvl. 1",
+      "block.projected.diamondblazedblock": "Diamondblazedblock",
+      "item.projecdz.yellowcream": "Yellow Cream",
+      "block.projecdz.blueplantametrin": "Bonny Blue",
+      "advancements.bmplatnaachievment.title": "Prav� fanda!",
+      "item.nutriniumsword.name": "Neutrinium Sword",
+      "item.projectedz.coal3item": "Coal3lvl",
+      "item.blazedfood.name": "Blazed Food",
+      "block.projectedz.hrabplanks": "Hrab Planks",
+      "block.projecdz.nakedplant": "Gez Plant",
+      "item.projectedz.backpack": "Backpack",
+      "item.irondust.name": "Iron Dust",
+      "item.projected.fullenchantorb": "Full Enchant Orb",
+      "item.projected.ametrinaxe": "Ametrinaxe",
+      "item.projectedz.ametrin": "Ametrin",
+      "item.projecdz.ametrindimension": "Ametrindimension Portal Igniter",
+      "item.neutriniumitem.name": "Neutrinium",
+      "item.projecdz.chargedneutriniumitem": "Charged Neutrinium",
+      "block.projecdz.batteryblockmk_1": "Battery Block MK1",
+      "item.projecdz.nutriniumarmorboots": "Nutrinium Armor Boots",
+      "item.nutriniumarmorlegs.name": "Nutrinium Armor Leggings",
+      "block.projected.ametrinore": "Ametrinore",
+      "item.projected.daynightswitcher": "Time Orb",
+      "tile.lavageneratorblock.name": "Lava Generator",
+      "block.projecdz.emraldleaves": "Emraldleaves",
+      "item.projecdz.ametrindust": "Ametrin Dust",
+      "item.minecraft.tipped_arrow.effect.maxhealth_40": "Arrow of Potion of Health Boost",
+      "tile.irradiatorblock.name": "Irradiator",
+      "item.projecdz.nutriniumarmor_chestplate": "Nutrinium Armor Body",
+      "item.backpack.name": "Backpack",
+      "item.projected.coal1item": "Coal 1lvl",
+      "block.projectedz.diamondleaves": "Diamond Leaves",
+      "item.projecdz.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
+      "item.coal2item.name": "Coal 2lvl",
+      "item.projecdz.ghostgrey": "Grey Ghost Spawn Egg",
+      "item.projected.nutriniumarmorboots": "Nutrinium Armor Boots",
+      "item.projecdz.daynightswitcher": "Time Orb",
+      "item.projectedz.nutriniumarmorbody": "Nutrinium Armor Body",
+      "item.ametrindust.name": "Ametrin Dust",
+      "tile.emeraldblock.name": "Emeral Log",
+      "entity.projecdz.ametrincow": "Ametrin Cow",
+      "block.projecdz.yellowhatty": "Yellow Hatty",
+      "entity.ghostgrey.name": "Grey Ghost",
+      "block.projectedz.dialog": "Diamond Log",
+      "block.projecdz.hrabplanks": "Hrab Planks",
+      "item.projected.diamondblazed": "Diamond Blazed",
+      "item.projectedz.diamondblazed": "Diamond Blazed",
+      "item.projecdz.nutriniumarmorlegs": "Nutrinium Armor Leggings",
+      "item.projectedz.chargedneutriniumitem": "Charged Neutrinium",
+      "item.projected.ametrinsword": "Ametrinsword",
+      "block.projected.hardenedcbbleblock": "Hardened Cobblestone",
+      "block.projecdz.ametrinore": "Ametrinore",
+      "item.projected.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
+      "tile.goldlog.name": "Gold Log",
+      "tile.hrabblock.name": "Hrab Log",
+      "item.neutriniumpickaxe.name": "Neutrinium Pickaxe(ccruto)",
+      "item.projecdz.diamonddust": "Diamond Dust",
+      "item.projecdz.coal1item": "Coal 1lvl",
+      "item.projecdz.irondust": "Iron Dust",
+      "tile.nakedplant.name": "Gez Plant",
+      "item.projecdz.purplecream": "Purple Cream",
+      "item.projecdz.hardcobbledust": "Hard Cobblestone Dust",
+      "item.projecdz.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
+      "item.projecdz.nutriniumarmor_boots": "Nutrinium Armor Boots",
+      "block.projectedz.appleleavesblock": "Apple Leaves",
+      "block.projected.hrabplanks": "Hrab Planks",
+      "item.projected.blazedfood": "Blazed Food",
+      "item.projectedz.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
+      "item.diamonddust.name": "Diamond Dust",
+      "tile.generatormk_2.name": "Generator mk2",
+      "block.projected.generator": "Generator mk1",
+      "entity.ametrinenderman.name": "Ametrin Enderman",
+      "item.minecraft.lingering_potion.effect.maxhealth_40": "Lingering Potion of Health Boost",
+      "item.antimatter.name": "Anti-Matter",
+      "item.nutriniumarmorboots.name": "Nutrinium Armor Boots",
+      "block.projecdz.generatormk_2": "Generator mk2",
+      "item.projecdz.neutriniumitem": "Neutrinium",
+      "item.projectedz.emeralddust": "Emerald Dust",
+      "tile.appleleavesblock.name": "Apple Leaves",
+      "item.projected.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
+      "item.projecdz.ametrinpicaxe": "Ametrin Pickaxe",
+      "block.projectedz.generatormk_2": "Generator mk2",
+      "item.projecdz.ametrinsword": "Ametrin Sword",
+      "entity.projecdz.ghostgrey": "Grey Ghost",
+      "block.projecdz.irradiatorblock": "Irradiator",
+      "tile.hardenedcbbleblock.name": "Hardened Cobblestone",
+      "item.projecdz.diamondblazed": "Diamond Blazed",
+      "item.projecdz.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
+      "item.projecdz.nutriniumsword": "Neutrinium Sword",
+      "item.projectedz.ametrindust": "Ametrin Dust",
+      "item.chargedneutriniumitem.name": "Charged Neutrinium",
+      "block.projectedz.drtickablock": "Crusher",
+      "item.projectedz.antimatter": "Anti-Matter",
+      "item.projectedz.bmdovodyhod": "Brano Mojsej Tak ma do vody hod!",
+      "item.nutriniumarmorhelmet.name": "Nutrinium Armor Helmet",
+      "tile.goldleaves.name": "Goldleaves",
+      "entity.projecdz.clawgoblin": "Claw Goblin",
+      "item.coal3item.name": "Coal3lvl",
       "item.projecdz.nutriniumarmorbody": "Nutrinium Armor Body",
       "block.projectedz.hrabblock": "Hrab Log",
       "item.projectedz.ametrinaxe": "Ametrinaxe",
-      "itemGroup.tabproject_d": "Project D",
+      "item.ametrin.name": "Ametrin",
+      "item.projecdz.ametrinenderman": "Ametrin Enderman Spawn Egg",
+      "item.nutriniumarmorbody.name": "Nutrinium Armor Body",
+      "item.minecraft.splash_potion.effect.maxhealth_40": "Splash Potion of Health Boost",
       "block.projecdz.hrabblock": "Hrab Log",
-      "item.projected.ametrin": "Ametrin",
-      "block.projecdz.dialog": "Diamond Log",
-      "block.projecdz.drtickablock": "Crusher"
+      "block.projecdz.goldleaves": "Goldleaves",
+      "block.projecdz.drtickablock": "Crusher",
+      "tile.emraldleaves.name": "Emraldleaves"
     }
   },
   "workspaceSettings": {

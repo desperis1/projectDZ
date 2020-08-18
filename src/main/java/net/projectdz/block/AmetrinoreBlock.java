@@ -1,6 +1,7 @@
 
 package net.projectdz.block;
 
+import net.projectdz.world.dimension.AmetrindimensionDimension;
 import net.projectdz.itemgroup.ProjectDItemGroup;
 import net.projectdz.ProjecdzModElements;
 
@@ -67,7 +68,7 @@ public class AmetrinoreBlock extends ProjecdzModElements.ModElement {
 				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					DimensionType dimensionType = world.getDimension().getType();
 					boolean dimensionCriteria = false;
-					if (dimensionType == DimensionType.OVERWORLD)
+					if (dimensionType == AmetrindimensionDimension.type)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
@@ -78,7 +79,7 @@ public class AmetrinoreBlock extends ProjecdzModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 4)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 5, 5, 13))));
+			}), block.getDefaultState(), 4)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(2, 5, 5, 35))));
 		}
 	}
 }

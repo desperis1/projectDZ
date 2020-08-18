@@ -1,0 +1,39 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "2": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "3": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "4": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "5": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "6": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "7": {
+      "item": "projecdz:neutriniumitem"
+    },
+    "8": {
+      "item": "projecdz:neutriniumitem"
+    }
+  },
+  "result": {
+    "item": "projecdz:nutriniumarmorbody",
+    "count": 1
+  }
+}

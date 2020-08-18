@@ -1,0 +1,13 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "projecdz:hrabblock"
+    }
+  ],
+  "result": {
+    "item": "projecdz:hrabplanks",
+    "count": 4
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "projecdz:blocks/yellow_hatty",
+    "particle": "projecdz:blocks/yellow_hatty"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:hardenedcbbleblock"
+    }
+  },
+  "result": {
+    "item": "minecraft:cobblestone",
+    "count": 9
+  }
+}

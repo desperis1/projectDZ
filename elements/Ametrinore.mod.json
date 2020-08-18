@@ -89,7 +89,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:Ametrindimension"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
@@ -100,6 +100,6 @@
     "frequencyPerChunks": 2,
     "frequencyOnChunk": 4,
     "minGenerateHeight": 5,
-    "maxGenerateHeight": 13
+    "maxGenerateHeight": 35
   }
 }

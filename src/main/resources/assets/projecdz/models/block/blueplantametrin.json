@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "projecdz:blocks/blueflower",
+    "particle": "projecdz:blocks/blueflower"
+  }
+}

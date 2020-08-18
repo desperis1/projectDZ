@@ -1,0 +1,42 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:coal3item"
+    },
+    "1": {
+      "item": "projecdz:coal3item"
+    },
+    "2": {
+      "item": "projecdz:coal3item"
+    },
+    "3": {
+      "item": "projecdz:coal3item"
+    },
+    "4": {
+      "item": "projecdz:diamondblazedblock"
+    },
+    "5": {
+      "item": "projecdz:coal3item"
+    },
+    "6": {
+      "item": "projecdz:coal3item"
+    },
+    "7": {
+      "item": "projecdz:coal3item"
+    },
+    "8": {
+      "item": "projecdz:coal3item"
+    }
+  },
+  "result": {
+    "item": "projecdz:neutriniumitem",
+    "count": 1
+  }
+}

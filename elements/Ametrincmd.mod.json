@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "command",
+  "definition": {
+    "commandName": "ame",
+    "permissionLevel": 2,
+    "onCommandExecuted": {
+      "name": "AmetrincmdCommandExecuted"
+    }
+  }
+}

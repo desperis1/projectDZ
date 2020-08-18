@@ -1,0 +1,42 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:diamondblazed"
+    },
+    "1": {
+      "item": "minecraft:hopper"
+    },
+    "2": {
+      "item": "projecdz:diamondblazed"
+    },
+    "3": {
+      "item": "projecdz:coal3item"
+    },
+    "4": {
+      "item": "projecdz:generator"
+    },
+    "5": {
+      "item": "projecdz:coal3item"
+    },
+    "6": {
+      "item": "projecdz:diamondblazed"
+    },
+    "7": {
+      "item": "minecraft:hopper"
+    },
+    "8": {
+      "item": "projecdz:diamondblazed"
+    }
+  },
+  "result": {
+    "item": "projecdz:generatormk_2",
+    "count": 1
+  }
+}
