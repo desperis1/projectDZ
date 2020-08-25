@@ -1,0 +1,42 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:hardenedcbbleblock"
+    },
+    "1": {
+      "item": "minecraft:gold_block"
+    },
+    "2": {
+      "item": "projecdz:hardenedcbbleblock"
+    },
+    "3": {
+      "item": "minecraft:gold_block"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "minecraft:gold_block"
+    },
+    "6": {
+      "item": "projecdz:hardenedcbbleblock"
+    },
+    "7": {
+      "item": "minecraft:gold_block"
+    },
+    "8": {
+      "item": "projecdz:hardenedcbbleblock"
+    }
+  },
+  "result": {
+    "item": "projecdz:batteryblockmk_1",
+    "count": 1
+  }
+}

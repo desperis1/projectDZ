@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "DIMENSION": 1,
+    "ENTITY": 6,
     "GUI": 7,
-    "ENTITY": 6
+    "DIMENSION": 1
   },
   "mod_elements": [
     {
@@ -1941,6 +1941,62 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "maxhealth_40"
+    },
+    {
+      "name": "AmetrindimensionPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ametrindimension_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lavageneratorrecipe",
+      "type": "recipe",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lavageneratorrecipe"
+    },
+    {
+      "name": "Batterymkrecipe",
+      "type": "recipe",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batterymkrecipe"
+    },
+    {
+      "name": "Electromerrecipe",
+      "type": "recipe",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "electromerrecipe"
     }
   ],
   "variable_elements": [

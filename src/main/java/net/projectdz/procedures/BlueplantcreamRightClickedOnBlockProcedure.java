@@ -1,8 +1,8 @@
 package net.projectdz.procedures;
 
-import net.projectdz.potion.Maxhealth40Potion;
 import net.projectdz.ProjecdzModElements;
 
+import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.LivingEntity;
@@ -37,12 +37,12 @@ public class BlueplantcreamRightClickedOnBlockProcedure extends ProjecdzModEleme
 			}
 		}
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Maxhealth40Potion.potion, (int) ((new Object() {
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, (int) ((new Object() {
 				int check(LivingEntity _entity) {
 					if (_entity instanceof LivingEntity) {
 						Collection<EffectInstance> effects = _entity.getActivePotionEffects();
 						for (EffectInstance effect : effects) {
-							if (effect.getPotion() == Maxhealth40Potion.potion)
+							if (effect.getPotion() == Effects.HEALTH_BOOST)
 								return effect.getDuration();
 						}
 					}

@@ -2,6 +2,8 @@ package net.projectdz.procedures;
 
 import net.projectdz.ProjecdzModElements;
 
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
@@ -20,6 +22,6 @@ public class Maxhealth40OnPotionActiveTickProcedure extends ProjecdzModElements.
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).setHealth((float) 80);
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HEALTH_BOOST, (int) 1200, (int) 3, (false), (false)));
 	}
 }

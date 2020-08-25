@@ -1,6 +1,7 @@
 
 package net.projectdz.world.dimension;
 
+import net.projectdz.procedures.AmetrindimensionPlayerEntersDimensionProcedure;
 import net.projectdz.ProjecdzModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -9,6 +10,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.RegisterDimensionsEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.ModDimension;
 import net.minecraftforge.common.MinecraftForge;
@@ -41,6 +43,7 @@ import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -48,7 +51,9 @@ import javax.annotation.Nullable;
 
 import java.util.function.LongFunction;
 import java.util.function.BiFunction;
+import java.util.Map;
 import java.util.HashSet;
+import java.util.HashMap;
 import java.util.Arrays;
 
 @ProjecdzModElements.ModElement.Tag
@@ -158,7 +163,24 @@ public class AmetrindimensionDimension extends ProjecdzModElements.ModElement {
 			return (float) (d0 * 2.0D + d1) / 3.0F;
 		}
 	}
-
+	@SubscribeEvent
+	public void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
+		Entity entity = event.getPlayer();
+		World world = entity.world;
+		double x = entity.getPosX();
+		double y = entity.getPosY();
+		double z = entity.getPosZ();
+		if (event.getTo() == type) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				AmetrindimensionPlayerEntersDimensionProcedure.executeProcedure($_dependencies);
+			}
+		}
+	}
 	public static class ChunkProviderModded extends EndChunkGenerator {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new EndGenerationSettings() {
