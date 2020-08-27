@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "projecdz:blocks/battery_mk2_red",
+    "up": "projecdz:blocks/battery_mk2_green",
+    "north": "projecdz:blocks/battery_mk2_red",
+    "east": "projecdz:blocks/battery_mk2_red",
+    "south": "projecdz:blocks/battery_mk2_red",
+    "west": "projecdz:blocks/battery_mk2_red",
+    "particle": "projecdz:blocks/battery_mk2_red"
+  }
+}

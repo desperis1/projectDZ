@@ -2,18 +2,17 @@
   "_fv": 10,
   "_type": "block",
   "definition": {
-    "texture": "energyslot_green_block",
-    "textureTop": "solar_panel_top",
-    "textureLeft": "",
-    "textureFront": "hardened_cbble",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "battery_mk2_red",
+    "textureTop": "battery_mk2_green",
+    "textureLeft": "battery_mk2_red",
+    "textureFront": "battery_mk2_red",
+    "textureRight": "battery_mk2_red",
+    "textureBack": "battery_mk2_red",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "itemTexture": "",
-    "blockBase": "Slab",
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -23,7 +22,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Solar Panel mk1",
+    "name": "Battery Block MK2",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -44,7 +43,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 5,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -83,22 +82,18 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 5000,
-    "energyMaxReceive": 500,
-    "energyMaxExtract": 500,
+    "energyCapacity": 650000,
+    "energyMaxReceive": 15000,
+    "energyMaxExtract": 15000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "SolarpanelblockUpdateTick"
+      "name": "Batteryblockmk2UpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

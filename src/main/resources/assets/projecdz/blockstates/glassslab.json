@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "projecdz:block/glassslab"
+    },
+    "type=top": {
+      "model": "projecdz:block/glassslab_top"
+    },
+    "type=double": {
+      "model": "projecdz:block/glassslab_full"
+    }
+  }
+}

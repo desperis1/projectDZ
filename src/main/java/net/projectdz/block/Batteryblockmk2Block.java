@@ -1,7 +1,7 @@
 
 package net.projectdz.block;
 
-import net.projectdz.procedures.Batterymk2blockUpdateTickProcedure;
+import net.projectdz.procedures.Batteryblockmk2UpdateTickProcedure;
 import net.projectdz.itemgroup.ProjectDItemGroup;
 import net.projectdz.ProjecdzModElements;
 
@@ -58,12 +58,12 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @ProjecdzModElements.ModElement.Tag
-public class Batterymk2blockBlock extends ProjecdzModElements.ModElement {
-	@ObjectHolder("projecdz:batterymk_2block")
+public class Batteryblockmk2Block extends ProjecdzModElements.ModElement {
+	@ObjectHolder("projecdz:batteryblockmk_2")
 	public static final Block block = null;
-	@ObjectHolder("projecdz:batterymk_2block")
+	@ObjectHolder("projecdz:batteryblockmk_2")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public Batterymk2blockBlock(ProjecdzModElements instance) {
+	public Batteryblockmk2Block(ProjecdzModElements instance) {
 		super(instance, 198);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -76,12 +76,12 @@ public class Batterymk2blockBlock extends ProjecdzModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("batterymk_2block"));
+		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("batteryblockmk_2"));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("batterymk_2block");
+			setRegistryName("batteryblockmk_2");
 		}
 
 		@Override
@@ -118,7 +118,7 @@ public class Batterymk2blockBlock extends ProjecdzModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				Batterymk2blockUpdateTickProcedure.executeProcedure($_dependencies);
+				Batteryblockmk2UpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
@@ -230,7 +230,7 @@ public class Batterymk2blockBlock extends ProjecdzModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("batterymk_2block");
+			return new StringTextComponent("batteryblockmk_2");
 		}
 
 		@Override

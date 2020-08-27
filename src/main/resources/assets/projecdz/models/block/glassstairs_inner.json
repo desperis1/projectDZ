@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "projecdz:blocks/glass",
+    "top": "projecdz:blocks/glass_stairs_top",
+    "side": "projecdz:blocks/glass"
+  }
+}

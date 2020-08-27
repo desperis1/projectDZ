@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Solarpanelblock"
+      "value": "CUSTOM:Solarpanelblockmk1"
     },
-    "name": "solarpanelrecipe",
+    "name": "solarpanelmk_1recipe",
     "namespace": "mod"
   }
 }

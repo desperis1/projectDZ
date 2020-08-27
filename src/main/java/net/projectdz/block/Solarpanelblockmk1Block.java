@@ -1,7 +1,7 @@
 
 package net.projectdz.block;
 
-import net.projectdz.procedures.SolarpanelblockUpdateTickProcedure;
+import net.projectdz.procedures.Solarpanelblockmk1UpdateTickProcedure;
 import net.projectdz.itemgroup.ProjectDItemGroup;
 import net.projectdz.ProjecdzModElements;
 
@@ -59,12 +59,12 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @ProjecdzModElements.ModElement.Tag
-public class SolarpanelblockBlock extends ProjecdzModElements.ModElement {
-	@ObjectHolder("projecdz:solarpanelblock")
+public class Solarpanelblockmk1Block extends ProjecdzModElements.ModElement {
+	@ObjectHolder("projecdz:solarpanelblockmk_1")
 	public static final Block block = null;
-	@ObjectHolder("projecdz:solarpanelblock")
+	@ObjectHolder("projecdz:solarpanelblockmk_1")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public SolarpanelblockBlock(ProjecdzModElements instance) {
+	public Solarpanelblockmk1Block(ProjecdzModElements instance) {
 		super(instance, 196);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
@@ -77,12 +77,12 @@ public class SolarpanelblockBlock extends ProjecdzModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("solarpanelblock"));
+		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("solarpanelblockmk_1"));
 	}
 	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("solarpanelblock");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
+			setRegistryName("solarpanelblockmk_1");
 		}
 
 		@Override
@@ -114,7 +114,7 @@ public class SolarpanelblockBlock extends ProjecdzModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				SolarpanelblockUpdateTickProcedure.executeProcedure($_dependencies);
+				Solarpanelblockmk1UpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
@@ -226,7 +226,7 @@ public class SolarpanelblockBlock extends ProjecdzModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("solarpanelblock");
+			return new StringTextComponent("solarpanelblockmk_1");
 		}
 
 		@Override
@@ -241,7 +241,7 @@ public class SolarpanelblockBlock extends ProjecdzModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Solar Panel mk1");
+			return new StringTextComponent("Solar Panel MK1");
 		}
 
 		@Override
@@ -274,7 +274,7 @@ public class SolarpanelblockBlock extends ProjecdzModElements.ModElement {
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-		private final EnergyStorage energyStorage = new EnergyStorage(5000, 500, 500, 0) {
+		private final EnergyStorage energyStorage = new EnergyStorage(5000, 250, 250, 0) {
 			@Override
 			public int receiveEnergy(int maxReceive, boolean simulate) {
 				int retval = super.receiveEnergy(maxReceive, simulate);

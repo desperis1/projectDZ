@@ -15,6 +15,7 @@ import net.minecraft.block.BlockState;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.Map;
 
 @ProjecdzModElements.ModElement.Tag
@@ -114,14 +115,7 @@ public class LavageneratorblockUpdateTickProcedure extends ProjecdzModElements.M
 				}
 			}
 		}
-		if (((0 < (new Object() {
-			public double getValue(BlockPos pos, String tag) {
-				TileEntity tileEntity = world.getTileEntity(pos);
-				if (tileEntity != null)
-					return tileEntity.getTileData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "lavageneratorlevel"))) && (250 == (new Object() {
+		if (((250 > (new Object() {
 			public int receiveEnergySimulate(BlockPos pos, int _amount) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				TileEntity _ent = world.getTileEntity(pos);
@@ -129,7 +123,22 @@ public class LavageneratorblockUpdateTickProcedure extends ProjecdzModElements.M
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
 				return _retval.get();
 			}
-		}.receiveEnergySimulate(new BlockPos((int) x, (int) (y + 1), (int) z), (int) 250))))) {
+		}.receiveEnergySimulate(new BlockPos((int) x, (int) y, (int) z), (int) 250))) && ((0 < (new Object() {
+			public double getValue(BlockPos pos, String tag) {
+				TileEntity tileEntity = world.getTileEntity(pos);
+				if (tileEntity != null)
+					return tileEntity.getTileData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "lavageneratorlevel"))) && (new Object() {
+			public boolean canReceiveEnergy(BlockPos pos) {
+				AtomicBoolean _retval = new AtomicBoolean(false);
+				TileEntity _ent = world.getTileEntity(pos);
+				if (_ent != null)
+					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
+				return _retval.get();
+			}
+		}.canReceiveEnergy(new BlockPos((int) x, (int) (y + 1), (int) z)))))) {
 			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) (y + 1), (int) z));
 				int _amount = (int) 250;

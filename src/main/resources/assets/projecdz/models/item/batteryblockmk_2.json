@@ -1,5 +1,5 @@
 {
-  "parent": "projecdz:block/solarpanelblock",
+  "parent": "projecdz:block/batteryblockmk_2",
   "display": {
     "thirdperson": {
       "rotation": [

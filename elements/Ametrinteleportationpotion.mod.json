@@ -1,0 +1,25 @@
+{
+  "_fv": 10,
+  "_type": "potion",
+  "definition": {
+    "name": "Ametrin Teleportation Potion",
+    "effectName": "Ametrin Dimension",
+    "icon": "purple_cream.png",
+    "color": {
+      "value": -6750004,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "AmetrinteleportationpotionPotionStartedapplied"
+    },
+    "onExpired": {
+      "name": "AmetrinteleportationpotionPotionExpires"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "projecdz:block/solarpanelblockmk_1"
+    },
+    "type=top": {
+      "model": "projecdz:block/solarpanelblockmk_1_top"
+    },
+    "type=double": {
+      "model": "projecdz:block/solarpanelblockmk_1_full"
+    }
+  }
+}
