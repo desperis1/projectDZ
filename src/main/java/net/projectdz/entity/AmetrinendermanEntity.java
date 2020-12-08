@@ -56,8 +56,8 @@ public class AmetrinendermanEntity extends ProjecdzModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("ametrinenderman")
 						.setRegistryName("ametrinenderman");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -16777216, -6750055, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ametrinenderman"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16777216, -6750055, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("ametrinenderman_spawn_egg"));
 	}
 
 	@Override
@@ -118,10 +118,6 @@ public class AmetrinendermanEntity extends ProjecdzModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

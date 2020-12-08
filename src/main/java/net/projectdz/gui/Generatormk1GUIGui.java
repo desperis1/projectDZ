@@ -119,7 +119,7 @@ public class Generatormk1GUIGui extends ProjecdzModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 27, 34) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 27, 35) {
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 133, 34) {
 				@Override
@@ -313,11 +313,11 @@ public class Generatormk1GUIGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override

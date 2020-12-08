@@ -7,6 +7,7 @@ import net.projectdz.ProjecdzModElements;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.UseAction;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
@@ -25,7 +26,8 @@ public class BlazedfoodItem extends ProjecdzModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ProjectDItemGroup.tab).maxStackSize(64).food((new Food.Builder()).hunger(24).saturation(40f).build()));
+			super(new Item.Properties().group(ProjectDItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(24).saturation(40f).build()));
 			setRegistryName("blazedfood");
 		}
 
@@ -35,7 +37,7 @@ public class BlazedfoodItem extends ProjecdzModElements.ModElement {
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack par1ItemStack) {
+		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.EAT;
 		}
 	}

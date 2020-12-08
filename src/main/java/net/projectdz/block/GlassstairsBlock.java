@@ -49,7 +49,7 @@ public class GlassstairsBlock extends ProjecdzModElements.ModElement {
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(new Block(Block.Properties.create(Material.ROCK)).getDefaultState(),
+			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1f, 10f)).getDefaultState(),
 					Block.Properties.create(Material.GLASS).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			setRegistryName("glassstairs");
 		}

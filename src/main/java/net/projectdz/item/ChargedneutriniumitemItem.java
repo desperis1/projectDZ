@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
@@ -26,7 +27,7 @@ public class ChargedneutriniumitemItem extends ProjecdzModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ProjectDItemGroup.tab).maxStackSize(64));
+			super(new Item.Properties().group(ProjectDItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("chargedneutriniumitem");
 		}
 

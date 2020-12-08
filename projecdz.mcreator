@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "ENTITY": 6,
     "DIMENSION": 1,
-    "GUI": 7
+    "GUI": 7,
+    "ENTITY": 6
   },
   "mod_elements": [
     {
@@ -2144,10 +2144,6 @@
           {
             "name": "z",
             "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -2179,13 +2175,87 @@
       "registry_name": "ametrinteleportationpotion"
     },
     {
-      "name": "HomeRightClickedOnBlock",
-      "type": "procedure",
-      "sortid": 205,
+      "name": "Energystone",
+      "type": "item",
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "home_right_clicked_on_block",
+      "registry_name": "energystone"
+    },
+    {
+      "name": "Chagerblockmk1",
+      "type": "block",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chagerblockmk_1"
+    },
+    {
+      "name": "Chargermk1gui",
+      "type": "gui",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chargermk_1gui"
+    },
+    {
+      "name": "Energystonerecipe",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energystonerecipe"
+    },
+    {
+      "name": "Testrecipe",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "testrecipe"
+    },
+    {
+      "name": "Chagerblockmk1UpdateTick",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chagerblockmk_1_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CreativesurvivalswaperOnKeyPressed",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "creativesurvivalswaper_on_key_pressed",
       "metadata": {
         "dependencies": [
           {
@@ -2212,38 +2282,271 @@
       }
     },
     {
-      "name": "Home",
-      "type": "item",
-      "sortid": 205,
+      "name": "Creativesurvivalswaper",
+      "type": "keybind",
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "ids": {},
+      "registry_name": "creativesurvivalswaper"
+    },
+    {
+      "name": "HomeCommandExecuted",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "home_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Home",
+      "type": "command",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
       "registry_name": "home"
+    },
+    {
+      "name": "SethomeCommandExecuted",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sethome_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sethome",
+      "type": "command",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "sethome"
+    },
+    {
+      "name": "ClearlagCommandExecuted",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "clearlag_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Clearlag",
+      "type": "command",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "clearlag"
+    },
+    {
+      "name": "AdminMENUThisGUIIsOpened",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "admin_menu_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Adminmenudaynightonpress",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adminmenudaynightonpress",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AdminMENU",
+      "type": "gui",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "admin_menu"
+    },
+    {
+      "name": "AdminMenuCreativeButtonpressed",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "admin_menu_creative_buttonpressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Maxhealth40PotionStartedapplied",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maxhealth_40_potion_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YellowcreampotiontickOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellowcreampotiontick_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Yellowcreampotiontick",
+      "type": "potion",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yellowcreampotiontick"
     }
   ],
   "variable_elements": [
     {
-      "name": "hrableavesvanish",
+      "name": "player_home_x",
       "type": "number",
-      "scope": "global",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
-      "name": "playerMV",
+      "name": "player_home_y",
       "type": "number",
-      "scope": "world",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_home_z",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_surface_x",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_surface_y",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_surface_z",
+      "type": "number",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],
   "sound_elements": [
     {
       "name": "bm_dovody",
-      "file": "bm_dovody",
+      "files": [
+        "bm_dovody"
+      ],
       "category": "music"
     },
     {
       "name": "radiation",
-      "file": "radiation",
+      "files": [
+        "radiation"
+      ],
       "category": "block"
     }
   ],
@@ -2256,6 +2559,7 @@
       "item.golddust.name": "Gold Dust",
       "item.projecdz.ametrinboomerang": "Ametrin Boomerang",
       "item.projectedz.irondust": "Iron Dust",
+      "item.projecdz.energystone": "Energy Stone",
       "item.electromeritem.name": "Electromer",
       "item.projecdz.coal2item": "Coal 2lvl",
       "item.coal1item.name": "Coal 1lvl",
@@ -2267,13 +2571,14 @@
       "item.projectedz.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
       "item.projectedz.ametrinshovel": "Ametrin Shovel",
       "item.ametrindimension.name": "Ametrindimension Portal Igniter",
-      "item.projected.ametrinpicaxe": "Ametrin Pickaxe",
       "item.projectedz.fullenchantorb": "Full Enchant Orb",
+      "item.projected.ametrinpicaxe": "Ametrin Pickaxe",
       "item.projected.coal2item": "Coal 2lvl",
       "block.projectedz.hardenedcbbleblock": "Hardened Cobblestone",
       "item.projected.ametrinshovel": "Ametrinshovel",
       "item.projected.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
       "item.projected.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
+      "item.projecdz.ametrincow_spawn_egg": "Ametrin Cow Spawn Egg",
       "item.projectedz.diamonddust": "Diamond Dust",
       "item.projected.backpack": "Backpack",
       "block.projected.dialog": "Diamond Log",
@@ -2284,10 +2589,11 @@
       "advancements.antimatterchievment.descr": "You need craft Anti-Matter",
       "block.projecdz.hardenedcbbleblock": "Hardened Cobblestone",
       "item.projectedz.golddust": "Gold Dust",
-      "block.projecdz.glassslab": "Glass Slab",
       "item.projecdz.ametrincow": "Ametrin Cow Spawn Egg",
+      "block.projecdz.glassslab": "Glass Slab",
       "entity.projecdz.ametrinenderman": "Ametrin Enderman",
       "item.bmdovodyhod.name": "Brano Mojsej Tak ma do vody hod!",
+      "effect.yellowcreampotiontick": "Yellow Cream",
       "block.projecdz.glassstairs": "Glass Stairs",
       "block.projectedz.diamondblazedblock": "Diamondblazedblock",
       "item.projectedz.nutriniumarmorhelmet": "Nutrinium Armor Helmet",
@@ -2314,9 +2620,10 @@
       "block.projecdz.lavageneratorblock": "Lava Generator",
       "item.projecdz.ametrinshovel": "Ametrin Shovel",
       "item.projectedz.coal2item": "Coal 2lvl",
+      "item.projecdz.clawgoblin_spawn_egg": "Claw Goblin Spawn Egg",
       "item.projectedz.neutriniumitem": "Neutrinium",
-      "item.projecdz.blazedfood": "Blazed Food",
       "block.projectedz.irradiatorblock": "Irradiator",
+      "item.projecdz.blazedfood": "Blazed Food",
       "advancements.antimatterchievment.title": "Anti-Matter !!",
       "item.projecdz.electromeritem": "Electromer",
       "item.projecdz.backpack": "Backpack",
@@ -2326,6 +2633,7 @@
       "block.projecdz.purplearrow": "Purple Arrow",
       "item.minecraft.potion.effect.maxhealth_40": "Potion of Health Boost",
       "item.projectedz.hardcobbledust": "Hard Cobblestone Dust",
+      "item.minecraft.lingering_potion.effect.yellowcreampotiontick": "Lingering Yellow Cream",
       "item.projecdz.nutriniumarmor_leggings": "Nutrinium Armor Leggings",
       "item.minecraft.lingering_potion.effect.ametrinteleportationpotion": "Lingering Ametrin Teleportation Potion",
       "item.daynightswitcher.name": "Time Orb",
@@ -2341,9 +2649,11 @@
       "item.projected.nutriniumarmorbody": "Nutrinium Armor Body",
       "key.mcreator.neutriniumarmorguikeybind": "Neutriniumarmor GU Ikeybind",
       "item.projecdz.ametrinaxe": "Ametrinaxe",
+      "block.projecdz.chagerblockmk_1": "Charger Block",
       "block.projecdz.diamondleaves": "Diamond Leaves",
       "item.projecdz.emeralddust": "Emerald Dust",
       "block.projecdz.generator": "Generator mk1",
+      "item.minecraft.tipped_arrow.effect.yellowcreampotiontick": "Arrow of Yellow Cream",
       "item.emeralddust.name": "Emerald Dust",
       "item.record.bmdovodyhod.desc": "Jedine�n� plat�a legend�rneho spev�ka",
       "block.projectedz.ametrinore": "Ametrinore",
@@ -2365,14 +2675,15 @@
       "block.projecdz.blueplantametrin": "Bonny Blue",
       "advancements.bmplatnaachievment.title": "Prav� fanda!",
       "item.nutriniumsword.name": "Neutrinium Sword",
-      "item.projecdz.home": "Home",
       "item.projectedz.coal3item": "Coal3lvl",
       "item.blazedfood.name": "Blazed Food",
       "block.projectedz.hrabplanks": "Hrab Planks",
       "block.projecdz.nakedplant": "Gez Plant",
       "item.projectedz.backpack": "Backpack",
       "item.irondust.name": "Iron Dust",
+      "biome.projecdz.ameforestgold": "Ameforestgold",
       "item.projected.fullenchantorb": "Full Enchant Orb",
+      "item.minecraft.splash_potion.effect.yellowcreampotiontick": "Splash Yellow Cream",
       "item.projected.ametrinaxe": "Ametrinaxe",
       "block.projecdz.solarpanelblockmk_1": "Solar Panel MK1",
       "item.projectedz.ametrin": "Ametrin",
@@ -2395,21 +2706,26 @@
       "item.projected.coal1item": "Coal 1lvl",
       "block.projectedz.diamondleaves": "Diamond Leaves",
       "item.projecdz.neutriniumpickaxe": "Neutrinium Pickaxe(ccruto)",
+      "biome.projecdz.levibiome": "Levibiome",
       "item.coal2item.name": "Coal 2lvl",
       "item.projecdz.ghostgrey": "Grey Ghost Spawn Egg",
       "item.projected.nutriniumarmorboots": "Nutrinium Armor Boots",
+      "biome.projecdz.ameforestdimension": "Ameforestdimension",
       "item.projecdz.daynightswitcher": "Time Orb",
       "item.projectedz.nutriniumarmorbody": "Nutrinium Armor Body",
       "item.ametrindust.name": "Ametrin Dust",
       "tile.emeraldblock.name": "Emeral Log",
       "entity.projecdz.ametrincow": "Ametrin Cow",
+      "item.projecdz.ghostgrey_spawn_egg": "Grey Ghost Spawn Egg",
       "block.projecdz.yellowhatty": "Yellow Hatty",
       "entity.ghostgrey.name": "Grey Ghost",
+      "item.projecdz.ametrinenderman_spawn_egg": "Ametrin Enderman Spawn Egg",
       "block.projectedz.dialog": "Diamond Log",
       "block.projecdz.hrabplanks": "Hrab Planks",
       "item.projected.diamondblazed": "Diamond Blazed",
       "item.projectedz.diamondblazed": "Diamond Blazed",
       "item.projecdz.nutriniumarmorlegs": "Nutrinium Armor Leggings",
+      "biome.projecdz.ametrinemerald": "Ametrinemerald",
       "item.projectedz.chargedneutriniumitem": "Charged Neutrinium",
       "item.projected.ametrinsword": "Ametrinsword",
       "block.projected.hardenedcbbleblock": "Hardened Cobblestone",
@@ -2435,8 +2751,10 @@
       "block.projected.generator": "Generator mk1",
       "entity.ametrinenderman.name": "Ametrin Enderman",
       "item.minecraft.lingering_potion.effect.maxhealth_40": "Lingering Potion of Health Boost",
+      "item.minecraft.potion.effect.yellowcreampotiontick": "Yellow Cream",
       "item.minecraft.tipped_arrow.effect.ametrinteleportationpotion": "Arrow of Ametrin Teleportation Potion",
       "item.antimatter.name": "Anti-Matter",
+      "key.mcreator.creativesurvivalswaper": "Admin Menu",
       "item.nutriniumarmorboots.name": "Nutrinium Armor Boots",
       "block.projecdz.generatormk_2": "Generator mk2",
       "item.projecdz.neutriniumitem": "Neutrinium",
@@ -2493,5 +2811,5 @@
     "modElementsPackage": "net.projectdz",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000432115
+  "mcreatorVersion": 202000547520
 }

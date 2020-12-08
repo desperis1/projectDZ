@@ -1,11 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "irondust",
     "customModelName": "Normal",
     "name": "Iron Dust",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:ProjectD"
     },

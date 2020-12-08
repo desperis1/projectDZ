@@ -1,0 +1,52 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 190,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 206,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Charger",
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "name": "Charger",
+          "x": 195,
+          "y": 43
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blesk.png",
+          "use1Xscale": true,
+          "name": "blesk.png",
+          "x": 200,
+          "y": 82
+        }
+      }
+    ]
+  }
+}

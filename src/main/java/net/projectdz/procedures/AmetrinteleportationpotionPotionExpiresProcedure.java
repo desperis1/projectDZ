@@ -1,5 +1,6 @@
 package net.projectdz.procedures;
 
+import net.projectdz.ProjecdzModVariables;
 import net.projectdz.ProjecdzModElements;
 
 import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
@@ -26,7 +27,8 @@ public class AmetrinteleportationpotionPotionExpiresProcedure extends ProjecdzMo
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure AmetrinteleportationpotionPotionExpires!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure AmetrinteleportationpotionPotionExpires!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -48,15 +50,23 @@ public class AmetrinteleportationpotionPotionExpiresProcedure extends ProjecdzMo
 		}
 		{
 			Entity _ent = entity;
-			_ent.setPositionAndUpdate((entity.getPersistentData().getDouble("SleepingX")), (entity.getPersistentData().getDouble("SleepingY")),
-					(entity.getPersistentData().getDouble("SleepingZ")));
+			_ent.setPositionAndUpdate(
+					((entity.getCapability(ProjecdzModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ProjecdzModVariables.PlayerVariables())).player_surface_x),
+					((entity.getCapability(ProjecdzModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ProjecdzModVariables.PlayerVariables())).player_surface_y),
+					((entity.getCapability(ProjecdzModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ProjecdzModVariables.PlayerVariables())).player_surface_z));
 			if (_ent instanceof ServerPlayerEntity) {
-				((ServerPlayerEntity) _ent).connection.setPlayerLocation((entity.getPersistentData().getDouble("SleepingX")),
-						(entity.getPersistentData().getDouble("SleepingY")), (entity.getPersistentData().getDouble("SleepingZ")), _ent.rotationYaw,
-						_ent.rotationPitch, Collections.emptySet());
+				((ServerPlayerEntity) _ent).connection.setPlayerLocation(
+						((entity.getCapability(ProjecdzModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ProjecdzModVariables.PlayerVariables())).player_surface_x),
+						((entity.getCapability(ProjecdzModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ProjecdzModVariables.PlayerVariables())).player_surface_y),
+						((entity.getCapability(ProjecdzModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ProjecdzModVariables.PlayerVariables())).player_surface_z),
+						_ent.rotationYaw, _ent.rotationPitch, Collections.emptySet());
 			}
 		}
-		System.out.println((((entity.getPersistentData().getDouble("SleepingX"))) + "" + ((entity.getPersistentData().getDouble("SleepingY"))) + ""
-				+ ((entity.getPersistentData().getDouble("SleepingZ")))));
 	}
 }

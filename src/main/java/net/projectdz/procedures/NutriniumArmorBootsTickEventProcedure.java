@@ -17,7 +17,8 @@ public class NutriniumArmorBootsTickEventProcedure extends ProjecdzModElements.M
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure NutriniumArmorBootsTickEvent!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure NutriniumArmorBootsTickEvent!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

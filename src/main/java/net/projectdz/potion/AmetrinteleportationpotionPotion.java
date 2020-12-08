@@ -99,7 +99,6 @@ public class AmetrinteleportationpotionPotion extends ProjecdzModElements.ModEle
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
 				AmetrinteleportationpotionPotionStartedappliedProcedure.executeProcedure($_dependencies);
 			}
 		}

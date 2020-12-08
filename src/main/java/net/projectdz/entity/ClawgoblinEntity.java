@@ -60,8 +60,8 @@ public class ClawgoblinEntity extends ProjecdzModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 2.2f)).build("clawgoblin")
 						.setRegistryName("clawgoblin");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -3407719, -16764160, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("clawgoblin"));
+		elements.items.add(() -> new SpawnEggItem(entity, -3407719, -16764160, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("clawgoblin_spawn_egg"));
 	}
 
 	@Override
@@ -124,10 +124,6 @@ public class ClawgoblinEntity extends ProjecdzModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

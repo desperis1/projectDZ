@@ -17,7 +17,8 @@ public class NeutriniumpickaxeToolInHandTickProcedure extends ProjecdzModElement
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure NeutriniumpickaxeToolInHandTick!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure NeutriniumpickaxeToolInHandTick!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

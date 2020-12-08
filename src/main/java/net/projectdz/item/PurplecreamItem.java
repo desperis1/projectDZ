@@ -11,6 +11,7 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -34,7 +35,7 @@ public class PurplecreamItem extends ProjecdzModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ProjectDItemGroup.tab).maxDamage(3));
+			super(new Item.Properties().group(ProjectDItemGroup.tab).maxDamage(3).rarity(Rarity.COMMON));
 			setRegistryName("purplecream");
 		}
 

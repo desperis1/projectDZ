@@ -124,7 +124,7 @@ public class NeutriniumarmorGUIGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 		}
 
 		@Override
@@ -143,11 +143,11 @@ public class NeutriniumarmorGUIGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Neutrinium Armor", 157, 2, -16776961);
+			this.font.drawString("Neutrinium Armor", 156, 2, -16776961);
 			this.font.drawString("Helm", 117, 16, -1);
 			this.font.drawString("Boots", 106, 44, -1);
 			this.font.drawString("Leggins", 268, 14, -1);
-			this.font.drawString("Chestplate", 223, 38, -1);
+			this.font.drawString("Chestplate", 222, 38, -1);
 		}
 
 		@Override
@@ -160,11 +160,11 @@ public class NeutriniumarmorGUIGui extends ProjecdzModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 5, this.guiTop + 12, 110, 20, "Night Vision", e -> {
+			this.addButton(new Button(this.guiLeft + 4, this.guiTop + 12, 110, 20, "Night Vision", e -> {
 				ProjecdzMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
 				handleButtonAction(entity, 0, x, y, z);
 			}));
-			this.addButton(new Button(this.guiLeft + 5, this.guiTop + 40, 100, 20, "Speed", e -> {
+			this.addButton(new Button(this.guiLeft + 4, this.guiTop + 40, 100, 20, "Speed", e -> {
 				ProjecdzMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(1, x, y, z));
 				handleButtonAction(entity, 1, x, y, z);
 			}));

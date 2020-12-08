@@ -120,7 +120,7 @@ public class LavageneratorguiGui extends ProjecdzModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 54) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 79, 55) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return (new ItemStack(Items.LAVA_BUCKET, (int) (1)).getItem() == stack.getItem());
@@ -312,11 +312,11 @@ public class LavageneratorguiGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override
@@ -335,7 +335,7 @@ public class LavageneratorguiGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Lava Generator", 51, 2, -52480);
+			this.font.drawString("Lava Generator", 50, 2, -52480);
 			this.font.drawString("" + ((int) new Object() {
 				public double getValue(BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
@@ -344,7 +344,7 @@ public class LavageneratorguiGui extends ProjecdzModElements.ModElement {
 					return 0;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "lavageneratorlevel")) + "", 68, 17, -16777216);
-			this.font.drawString("Fuel Value:", 11, 16, -16777216);
+			this.font.drawString("Fuel Value:", 10, 16, -16777216);
 		}
 
 		@Override

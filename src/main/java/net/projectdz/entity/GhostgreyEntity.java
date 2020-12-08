@@ -77,7 +77,8 @@ public class GhostgreyEntity extends ProjecdzModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("ghostgrey")
 						.setRegistryName("ghostgrey");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -13421773, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ghostgrey"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -13421773, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ghostgrey_spawn_egg"));
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 				.size(0.5f, 0.5f)).build("entitybulletghostgrey").setRegistryName("entitybulletghostgrey"));
@@ -201,10 +202,6 @@ public class GhostgreyEntity extends ProjecdzModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
-		}
-
-		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
-			super.dropSpecialItems(source, looting, recentlyHitIn);
 		}
 
 		@Override

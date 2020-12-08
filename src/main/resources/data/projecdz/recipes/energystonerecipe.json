@@ -1,0 +1,42 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "projecdz:hardenedcbbleblock"
+    },
+    "1": {
+      "item": "minecraft:obsidian"
+    },
+    "2": {
+      "item": "projecdz:hardenedcbbleblock"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "4": {
+      "item": "projecdz:batteryblockmk_1"
+    },
+    "5": {
+      "item": "minecraft:obsidian"
+    },
+    "6": {
+      "item": "projecdz:hardenedcbbleblock"
+    },
+    "7": {
+      "item": "minecraft:obsidian"
+    },
+    "8": {
+      "item": "projecdz:hardenedcbbleblock"
+    }
+  },
+  "result": {
+    "item": "projecdz:energystone",
+    "count": 1
+  }
+}

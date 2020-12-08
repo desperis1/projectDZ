@@ -119,7 +119,7 @@ public class IrradiatorguiGui extends ProjecdzModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 39, 32) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 39, 33) {
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 115, 32) {
 				@Override
@@ -131,7 +131,7 @@ public class IrradiatorguiGui extends ProjecdzModElements.ModElement {
 			}));
 			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 19, 32) {
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 38, 13) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 38, 14) {
 			}));
 			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 57, 32) {
 			}));
@@ -321,21 +321,21 @@ public class IrradiatorguiGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projecdz:textures/radioactive_texture.png"));
-			this.blit(this.guiLeft + 4, this.guiTop + 4, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 3, this.guiTop + 4, 0, 0, 256, 256, 256, 256);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projecdz:textures/radioactive_texture.png"));
-			this.blit(this.guiLeft + 154, this.guiTop + 4, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 154, this.guiTop + 4, 0, 0, 256, 256, 256, 256);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projecdz:textures/radioactive_texture.png"));
-			this.blit(this.guiLeft + 4, this.guiTop + 61, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 3, this.guiTop + 61, 0, 0, 256, 256, 256, 256);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projecdz:textures/radioactive_texture.png"));
-			this.blit(this.guiLeft + 153, this.guiTop + 61, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 153, this.guiTop + 61, 0, 0, 256, 256, 256, 256);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projecdz:textures/radioactive_texture.png"));
-			this.blit(this.guiLeft + 85, this.guiTop + 31, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 85, this.guiTop + 31, 0, 0, 256, 256, 256, 256);
 		}
 
 		@Override
@@ -354,7 +354,7 @@ public class IrradiatorguiGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("IRRADIATOR", 66, 5, -256);
+			this.font.drawString("IRRADIATOR", 65, 5, -256);
 		}
 
 		@Override

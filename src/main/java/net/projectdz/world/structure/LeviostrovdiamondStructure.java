@@ -56,7 +56,7 @@ public class LeviostrovdiamondStructure extends ProjecdzModElements.ModElement {
 						j -= 1;
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
-						BlockPos spawnTo = new BlockPos(i, j + 105, k);
+						BlockPos spawnTo = new BlockPos(i + 0, j + 105, k + 0);
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();

@@ -1,10 +1,12 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 800,
-    "height": 332,
+    "width": 400,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
     "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
@@ -17,8 +19,8 @@
             "falpha": 0.0
           },
           "name": "Neutrinium Armor",
-          "x": 340,
-          "y": 77
+          "x": 170,
+          "y": 39
         }
       },
       {
@@ -28,11 +30,11 @@
           "onClick": {
             "name": "NANVbuttonpresset"
           },
-          "width": 220,
-          "height": 40,
+          "width": 110,
+          "height": 20,
           "name": "Night Vision",
-          "x": 36,
-          "y": 97
+          "x": 18,
+          "y": 49
         }
       },
       {
@@ -42,11 +44,11 @@
           "onClick": {
             "name": "NASPEEDbutttonpresed"
           },
-          "width": 200,
-          "height": 40,
+          "width": 100,
+          "height": 20,
           "name": "Speed",
-          "x": 36,
-          "y": 154
+          "x": 18,
+          "y": 77
         }
       },
       {
@@ -56,11 +58,11 @@
           "onClick": {
             "name": "NAslowfall"
           },
-          "width": 180,
-          "height": 40,
+          "width": 90,
+          "height": 20,
           "name": "Slow Fall",
-          "x": 639,
-          "y": 97
+          "x": 320,
+          "y": 49
         }
       },
       {
@@ -70,11 +72,11 @@
           "onClick": {
             "name": "NAINVbuttonpress"
           },
-          "width": 240,
-          "height": 40,
+          "width": 120,
+          "height": 20,
           "name": "Resistance",
-          "x": 577,
-          "y": 143
+          "x": 289,
+          "y": 72
         }
       },
       {
@@ -86,8 +88,8 @@
             "falpha": 0.0
           },
           "name": "Helm",
-          "x": 261,
-          "y": 106
+          "x": 131,
+          "y": 53
         }
       },
       {
@@ -99,8 +101,8 @@
             "falpha": 0.0
           },
           "name": "Boots",
-          "x": 239,
-          "y": 161
+          "x": 120,
+          "y": 81
         }
       },
       {
@@ -112,8 +114,8 @@
             "falpha": 0.0
           },
           "name": "Leggins",
-          "x": 563,
-          "y": 101
+          "x": 282,
+          "y": 51
         }
       },
       {
@@ -125,8 +127,8 @@
             "falpha": 0.0
           },
           "name": "Chestplate",
-          "x": 472,
-          "y": 149
+          "x": 236,
+          "y": 75
         }
       }
     ]

@@ -119,9 +119,9 @@ public class DrtickaguiGui extends ProjecdzModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 64, 18) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 64, 19) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 98, 51) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 98, 52) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -313,13 +313,13 @@ public class DrtickaguiGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projecdz:textures/gears64.png"));
-			this.blit(this.guiLeft + 74, this.guiTop + 26, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 74, this.guiTop + 26, 0, 0, 256, 256, 256, 256);
 		}
 
 		@Override

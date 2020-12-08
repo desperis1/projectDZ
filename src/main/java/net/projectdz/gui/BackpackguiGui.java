@@ -119,27 +119,27 @@ public class BackpackguiGui extends ProjecdzModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 65) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 66) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 27, 65) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 27, 66) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 65) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 66) {
 			}));
 			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 62, 65) {
 			}));
 			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 65) {
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 99, 65) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 99, 66) {
 			}));
 			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 117, 65) {
 			}));
-			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 134, 65) {
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 134, 66) {
 			}));
 			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 152, 65) {
 			}));
-			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 8, 45) {
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 8, 46) {
 			}));
-			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 25, 45) {
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 25, 46) {
 			}));
 			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 45, 45) {
 			}));
@@ -147,37 +147,37 @@ public class BackpackguiGui extends ProjecdzModElements.ModElement {
 			}));
 			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 82, 45) {
 			}));
-			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 101, 45) {
+			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 101, 46) {
 			}));
-			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 118, 45) {
+			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 118, 46) {
 			}));
 			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 136, 45) {
 			}));
-			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 152, 45) {
+			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 152, 46) {
 			}));
-			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 5, 25) {
+			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 5, 26) {
 			}));
 			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 23, 25) {
 			}));
-			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 42, 25) {
+			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 42, 26) {
 			}));
 			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 60, 25) {
 			}));
 			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 80, 25) {
 			}));
-			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 99, 25) {
+			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 99, 26) {
 			}));
 			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 118, 25) {
 			}));
-			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 136, 25) {
+			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 136, 26) {
 			}));
 			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 154, 25) {
 			}));
-			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 3, 4) {
+			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 3, 5) {
 			}));
-			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 23, 4) {
+			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 23, 5) {
 			}));
-			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 42, 4) {
+			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 42, 5) {
 			}));
 			this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 60, 4) {
 			}));
@@ -187,9 +187,9 @@ public class BackpackguiGui extends ProjecdzModElements.ModElement {
 			}));
 			this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 118, 4) {
 			}));
-			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 136, 3) {
+			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 136, 4) {
 			}));
-			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 155, 3) {
+			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 155, 4) {
 			}));
 			int si;
 			int sj;
@@ -377,11 +377,11 @@ public class BackpackguiGui extends ProjecdzModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		}
 
 		@Override

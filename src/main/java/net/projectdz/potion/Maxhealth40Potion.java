@@ -1,6 +1,7 @@
 
 package net.projectdz.potion;
 
+import net.projectdz.procedures.Maxhealth40PotionStartedappliedProcedure;
 import net.projectdz.procedures.Maxhealth40OnPotionActiveTickProcedure;
 import net.projectdz.ProjecdzModElements;
 
@@ -14,6 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
+import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
 import net.minecraft.entity.LivingEntity;
 
 import java.util.Map;
@@ -68,6 +70,19 @@ public class Maxhealth40Potion extends ProjecdzModElements.ModElement {
 		@Override
 		public boolean shouldRenderHUD(EffectInstance effect) {
 			return true;
+		}
+
+		@Override
+		public void applyAttributesModifiersToEntity(LivingEntity entity, AbstractAttributeMap attributeMapIn, int amplifier) {
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				Maxhealth40PotionStartedappliedProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

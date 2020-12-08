@@ -17,7 +17,8 @@ public class NutriniumArmorLeggingsTickEventProcedure extends ProjecdzModElement
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure NutriniumArmorLeggingsTickEvent!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure NutriniumArmorLeggingsTickEvent!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

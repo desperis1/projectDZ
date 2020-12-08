@@ -15,7 +15,8 @@ public class YellowcreamRightClickedOnBlockProcedure extends ProjecdzModElements
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("itemstack") == null) {
-			System.err.println("Failed to load dependency itemstack for procedure YellowcreamRightClickedOnBlock!");
+			if (!dependencies.containsKey("itemstack"))
+				System.err.println("Failed to load dependency itemstack for procedure YellowcreamRightClickedOnBlock!");
 			return;
 		}
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");

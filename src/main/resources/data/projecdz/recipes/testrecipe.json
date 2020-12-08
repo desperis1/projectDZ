@@ -1,0 +1,16 @@
+{
+  "group": "projecdz",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "projecdz:energystone"
+    },
+    {
+      "item": "projecdz:dialog"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 5
+  }
+}

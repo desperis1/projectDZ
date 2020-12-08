@@ -20,23 +20,28 @@ public class DiamondblazedRightClickedOnBlockProcedure extends ProjecdzModElemen
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure DiamondblazedRightClickedOnBlock!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure DiamondblazedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure DiamondblazedRightClickedOnBlock!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure DiamondblazedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure DiamondblazedRightClickedOnBlock!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure DiamondblazedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure DiamondblazedRightClickedOnBlock!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure DiamondblazedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure DiamondblazedRightClickedOnBlock!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure DiamondblazedRightClickedOnBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -45,15 +50,15 @@ public class DiamondblazedRightClickedOnBlockProcedure extends ProjecdzModElemen
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).experienceLevel : 0) >= 30)) {
-			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory
-						.clearMatchingItems(p -> ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-								.getItem() == p.getItem(), (int) 1);
+			if (entity instanceof PlayerEntity) {
+				ItemStack _stktoremove = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> _stktoremove.getItem() == p.getItem(), (int) 1);
+			}
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).addExperienceLevel(-((int) 30));
 			if (!world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(FullenchantorbItem.block, (int) (1)));
-				entityToSpawn.setPickupDelay(10);
+				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
 		}

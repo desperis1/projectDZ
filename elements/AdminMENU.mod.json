@@ -1,0 +1,73 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 375,
+    "height": 235,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Admin Menu",
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "name": "Admin Menu",
+          "x": 183,
+          "y": 9
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Clear Lag",
+          "onClick": {
+            "name": "ClearlagCommandExecuted"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "Clear Lag",
+          "x": 306,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Creative / Survival",
+          "onClick": {
+            "name": "AdminMenuCreativeButtonpressed"
+          },
+          "width": 120,
+          "height": 20,
+          "name": "Creative / Survival",
+          "x": 39,
+          "y": 25
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Day / Night",
+          "onClick": {
+            "name": "Adminmenudaynightonpress"
+          },
+          "width": 80,
+          "height": 20,
+          "name": "Day / Night",
+          "x": 55,
+          "y": 50
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "AdminMENUThisGUIIsOpened"
+    }
+  }
+}
