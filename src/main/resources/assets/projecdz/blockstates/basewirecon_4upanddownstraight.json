@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "projecdz:block/basewirecon_4upanddownstraight"
+    },
+    "facing=east": {
+      "model": "projecdz:block/basewirecon_4upanddownstraight",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "projecdz:block/basewirecon_4upanddownstraight",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "projecdz:block/basewirecon_4upanddownstraight",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "projecdz:block/basewirecon_4upanddownstraight",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "projecdz:block/basewirecon_4upanddownstraight",
+      "x": 90
+    }
+  }
+}

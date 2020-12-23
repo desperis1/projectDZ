@@ -16,7 +16,7 @@
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onActiveTick": {
-      "name": "YellowcreampotiontickOnPotionActiveTick"
+      "name": "Yelloworepotion"
     }
   }
 }

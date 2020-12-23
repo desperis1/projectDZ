@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "projecdz:block/basewirecon_2angle"
+    },
+    "facing=east": {
+      "model": "projecdz:block/basewirecon_2angle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "projecdz:block/basewirecon_2angle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "projecdz:block/basewirecon_2angle",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "projecdz:block/basewirecon_2angle",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "projecdz:block/basewirecon_2angle",
+      "x": 90
+    }
+  }
+}

@@ -4,6 +4,7 @@ package net.projectdz.gui;
 import org.lwjgl.opengl.GL11;
 
 import net.projectdz.procedures.ClearlagCommandExecutedProcedure;
+import net.projectdz.procedures.AdminmenurainsunonpressProcedure;
 import net.projectdz.procedures.AdminmenudaynightonpressProcedure;
 import net.projectdz.procedures.AdminMenuCreativeButtonpressedProcedure;
 import net.projectdz.procedures.AdminMENUThisGUIIsOpenedProcedure;
@@ -178,6 +179,10 @@ public class AdminMENUGui extends ProjecdzModElements.ModElement {
 				ProjecdzMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(2, x, y, z));
 				handleButtonAction(entity, 2, x, y, z);
 			}));
+			this.addButton(new Button(this.guiLeft + 32, this.guiTop + 72, 75, 20, "Rain / Sun", e -> {
+				ProjecdzMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(3, x, y, z));
+				handleButtonAction(entity, 3, x, y, z);
+			}));
 		}
 	}
 
@@ -289,6 +294,17 @@ public class AdminMENUGui extends ProjecdzModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("world", world);
 				AdminmenudaynightonpressProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 3) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				AdminmenurainsunonpressProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

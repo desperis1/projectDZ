@@ -1,0 +1,8 @@
+{
+  "parent": "projecdz:custom/base_wire_con_2_angle_down",
+  "textures": {
+    "all": "projecdz:blocks/base_wire_add",
+    "particle": "projecdz:blocks/base_wire_add",
+    "2": "projecdz:blocks/base_wire_add"
+  }
+}

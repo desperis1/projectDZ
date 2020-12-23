@@ -64,6 +64,20 @@
           "x": 55,
           "y": 50
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Rain / Sun",
+          "onClick": {
+            "name": "Adminmenurainsunonpress"
+          },
+          "width": 75,
+          "height": 20,
+          "name": "Rain / Sun",
+          "x": 58,
+          "y": 75
+        }
       }
     ],
     "onOpen": {
