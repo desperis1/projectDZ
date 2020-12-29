@@ -1,0 +1,10 @@
+{
+  "parent": "projecdz:custom/hub_1",
+  "textures": {
+    "all": "projecdz:blocks/hub1_top",
+    "particle": "projecdz:blocks/hub1_top",
+    "1": "projecdz:blocks/furnace_top",
+    "2": "projecdz:blocks/hub1_top",
+    "missing": "projecdz:blocks/"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "furnace_top",
+        "2": "hub1_top",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}
